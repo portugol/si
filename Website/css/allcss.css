@@ -10,12 +10,23 @@
 
 #content {
     background: #FFFFFF;
-		bottom: 0;
+	bottom: 0;
     left: 240px;
     position: absolute;
     right: 0;
     top: 49px;
     z-index: 1;
+}
+
+#logo {
+    background: url("../simbolo4.jpg") no-repeat 0 50% transparent;
+    display: block;
+    height: 48px;
+    left: 50%;
+    margin: 0 0 0 -56px;
+    padding: 0;
+    width: 112px;
+    position: absolute;
 }
 
 #menu > li > a {
@@ -43,7 +54,7 @@
 #sidebar {
     background: url("../img/sidebar.jpg") repeat scroll 0 0 transparent;
     color: #CCC;
-		bottom: 0;
+	bottom: 0;
     display: block;
     min-width: 240px;
     max-width: 300px;
@@ -57,8 +68,8 @@
 }
  
 #top .nav {
-		position:relative;
-		z-index:150
+	position:relative;
+	z-index:150
 }
 
 #top .navbar .navbar-inner {
@@ -75,7 +86,26 @@
     padding: 0 15px;
 }
  
+#work {
+    width: 100%;
+	height: 100%;
+    position: absolute;
+    top: 40px;
+}
  
+body {
+	overflow: hidden;
+	margin: 0px;
+}
+
+object {
+    width: 100%;
+    height: 100%;
+}
+ 
+
+
+
  
  
  
@@ -215,15 +245,6 @@ button, input {
 textarea {
     overflow: auto;
     vertical-align: top;
-}
-
-body {
-    margin: 0;
-    font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
-    font-size: 14px;
-    line-height: 20px;
-    color: #333;
-    background-color: #fff;
 }
 
 a {
@@ -11073,17 +11094,6 @@ kbd {
     .label-inverse[href] {
         background-color: #1a1a1a;
     }
-
-#logo {
-    background: url("../img/logo.png") no-repeat 0 50% transparent;
-    display: block;
-    height: 48px;
-    left: 50%;
-    margin: 0 0 0 -56px;
-    padding: 0;
-    width: 112px;
-    position: absolute;
-}
 
 #top .smallprofile {
     white-space: nowrap;

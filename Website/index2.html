@@ -1,11 +1,5 @@
 ﻿<!DOCTYPE html>
-<!--[if lt IE 7]> <html class="lt-ie10 lt-ie9 lt-ie8 lt-ie7" lang="en" xmlns:fb="http://ogp.me/ns/fb#"> <![endif]-->
-<!--[if IE 7]>    <html class="lt-ie10 lt-ie9 lt-ie8 gt-ie6" lang="en" xmlns:fb="http://ogp.me/ns/fb#"> <![endif]-->
-<!--[if IE 8]>    <html class="lt-ie10 lt-ie9 gt-ie7" lang="en" xmlns:fb="http://ogp.me/ns/fb#"> <![endif]-->
-<!--[if IE 9]>    <html class="lt-ie10 gt-ie8" lang="en" xmlns:fb="http://ogp.me/ns/fb#"> <![endif]-->
 <!--[if gt IE 9]><!--> <html lang="en"> <!--<![endif]-->
-
-<!-- Mirrored from compilr.com/ by HTTrack Website Copier/3.x [XR&CO'2010], Thu, 21 Mar 2013 21:35:09 GMT -->
 <!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=utf-8" /><!-- /Added by HTTrack -->
 <head>
 		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
@@ -42,112 +36,112 @@
                 <div class="wrapper">
                     <ul class="nav pull-left">
                         <li>
-														<button class="btn btn-navbar" onClick="show_hide()">
-																<span class="icon-bar"></span>
+							<button class="btn btn-navbar" onClick="show_hide()">
+								<span class="icon-bar"></span>
                                 <span class="icon-bar"></span>
                                 <span class="icon-bar"></span>	
-														</button>
+							</button>
                         </li>
                     </ul>
-                    <a id="logo" class="brand" href="home.html"></a>
-										<button class="btn btn-inverse hidden-phone pull-right" data-toggle="action" data-method="openSignupDialog">Signup</button>
-										<ul class="nav pull-right" style="margin-right: 0;">
-												<li>
-														<a data-toggle="action" data-method="openLoginDialog" href="#" class="">Login</a>
-														</li>
-																</ul>
-					      </div>
+                    <a id="logo" class="brand" href="home.html" onClick="updateObjectIframe(this); return false"></a>
+					<button class="btn btn-inverse hidden-phone pull-right" data-toggle="action" data-method="openSignupDialog">Signup</button>
+					<ul class="nav pull-right" style="margin-right: 0;">
+						<li>
+							<a data-toggle="action" data-method="openLoginDialog" href="#" class="">Login</a>
+						</li>
+					</ul>
+				</div>
             </div>
         </div>
     </div>
     
-		<!-- BARRA LATERAL -->
+	<!-- BARRA LATERAL -->
     <div id="sidebar">
         <div class="sidebar-inner">
             <ul id="menu" class="nav nav-list">
-                <li><a id="menu_projects" href="tutoriais.html"><i class="icon-white icon-pencil"></i>Tutoriais</a></li>
-                <li><a id="menu_learn" href="learn.html"><i class="icon-white icon-book"></i>Opção 2</a></li>
-                <li><a id="menu_forums" href="forum.html"><i class="icon-white icon-comment"></i>Opção 3</a></li>
-                <li><a id="menu_source_code" href="source-code.html"><i class="icon-white icon-globe"></i>Opção 4</a></li>
-                <li><a id="menu_account" href="#" data-toggle="action" data-method="openSignupDialog"><i class="icon-white icon-user"></i>Opção 5</a></li>
-                <li><a id="menu_settings" href="#" data-toggle="action" data-method="openSignupDialog"><i class="icon-white icon-cog"></i>Opção 6</a></li>                              
-                <li><a id="menu_help" href="support.html"><i class="icon-white icon-flag"></i>Opção 7</a></li>
-								<!-- RODAPÉ DA BARRA LATERAL -->
+                <li><a id="menu_projects" href="tutoriais.html" onClick="updateObjectIframe(this); return false">Tutoriais</a></li>
+                <li><a id="menu_learn" href="learn.html">Opção 2</a></li>
+                <li><a id="menu_forums" href="forum.html">Opção 3</a></li>
+                <li><a id="menu_source_code" href="source-code.html">Opção 4</a></li>
+                <li><a id="menu_account" href="#" data-toggle="action" data-method="openSignupDialog">Opção 5</a></li>
+                <li><a id="menu_settings" href="#" data-toggle="action" data-method="openSignupDialog">Opção 6</a></li>                              
+                <li><a id="menu_help" href="support.html"></i>Opção 7</a></li>
+				<!-- RODAPÉ DA BARRA LATERAL -->
                 <li>
                     <footer id="footer" class="footer">
                         <div class="divider"></div>
                         <p class="copyright">&copy; 2013 Portugol IDE</p>
                     </footer>    
                 </li>
-								<!-- FIM DE RODAPÉ DA BARRA LATERAL -->
+				<!-- FIM DE RODAPÉ DA BARRA LATERAL -->
             </ul>
-						<div id="navigation-panel" data-offset-left="44">
-								<div id="navigation-panel-resize-handle">
-										<a class="resize-handle">
-												<span class="icon-bar"></span>
-												<span class="icon-bar"></span>
-												<span class="icon-bar"></span>
-												<span class="icon-bar visible-device-only"></span>
-												<span class="icon-bar visible-device-only"></span>
-												<span class="icon-bar visible-device-only"></span>
-										</a>
-								</div>
-								<div id="navigation-panel-projects" class="navigation-panel-container with-panel-toolbar">
-										<div class="navigation-panel-header">
-												<button class="close">&times;</button> Projects
-										</div>
-										<div class="navigation-panel-body">
-												<ul class="navigation-panel-toolbar nav-icon-toolbar-five">
-														<li class="dropdown">
-																<a title="Add Resource" rel="tooltip" data-placement="top" data-toggle="dropdown" href="#"><i class="icon icon-plus-sign"></i></a>
-																<ul class="dropdown-menu">
-																		<li><a data-toggle="action" data-method="newFile" href="#"><i class="icon-file"></i> New File</a></li>
-																		<li><a data-toggle="action" data-method="newFolder" href="#"><i class="icon-folder-open"></i> New Folder</a></li>
-																		<li><a data-toggle="action" data-method="openCreateProjectDialog" href="#"><i class="icon-folder-close"></i> New Project</a></li>
-																</ul>
-														</li>
-														<li>
-																<a title="Import Files" rel="tooltip" data-placement="top" data-toggle="action" data-method="importToSelected" href="#">
-																		<i class="icon-upload"></i>
-																</a>
-														</li>
-														<li>
-																<a title="Export Project" rel="tooltip" data-placement="top" data-toggle="action" data-method="exportSelected" href="#">
-																		<i class="icon-download"></i>
-																</a>
-														</li>
-														<li>
-																<a title="Project Settings" rel="tooltip" data-placement="top" data-toggle="action" data-method="selectedProjectSettings" href="#">
-																		<i class="icon-cog"></i>
-																</a>
-														</li>
-														<li>
-																<a title="Delete Selected" rel="tooltip" data-placement="top" data-toggle="action" data-method="deleteSelected" href="#">
-																		<i class="icon-trash"></i>
-																</a>
-														</li>
-												</ul>
-												<div id="filetree" class="jstree filetree">
-												</div>
-												<div class="create-project" >
-														<a data-toggle="action" data-method="openCreateProjectDialog" href="#">
-																<p class="create-project-text">create your first project</p>
-														</a>
-												</div>
-										</div>
-								</div>
-						</div>
+			<div id="navigation-panel" data-offset-left="44">
+				<div id="navigation-panel-resize-handle">
+					<a class="resize-handle">
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar visible-device-only"></span>
+						<span class="icon-bar visible-device-only"></span>
+						<span class="icon-bar visible-device-only"></span>
+					</a>
 				</div>
+				<div id="navigation-panel-projects" class="navigation-panel-container with-panel-toolbar">
+					<div class="navigation-panel-header">
+						<button class="close">&times;</button> Projects
+					</div>
+					<div class="navigation-panel-body">
+						<ul class="navigation-panel-toolbar nav-icon-toolbar-five">
+							<li class="dropdown">
+								<a title="Add Resource" rel="tooltip" data-placement="top" data-toggle="dropdown" href="#"><i class="icon icon-plus-sign"></i></a>
+								<ul class="dropdown-menu">
+									<li><a data-toggle="action" data-method="newFile" href="#"><i class="icon-file"></i> New File</a></li>
+									<li><a data-toggle="action" data-method="newFolder" href="#"><i class="icon-folder-open"></i> New Folder</a></li>
+									<li><a data-toggle="action" data-method="openCreateProjectDialog" href="#"><i class="icon-folder-close"></i> New Project</a></li>
+								</ul>
+							</li>
+							<li>
+								<a title="Import Files" rel="tooltip" data-placement="top" data-toggle="action" data-method="importToSelected" href="#">
+									<i class="icon-upload"></i>
+								</a>
+							</li>
+							<li>
+								<a title="Export Project" rel="tooltip" data-placement="top" data-toggle="action" data-method="exportSelected" href="#">
+									<i class="icon-download"></i>
+								</a>
+							</li>
+							<li>
+								<a title="Project Settings" rel="tooltip" data-placement="top" data-toggle="action" data-method="selectedProjectSettings" href="#">
+									<i class="icon-cog"></i>
+								</a>
+							</li>
+							<li>
+								<a title="Delete Selected" rel="tooltip" data-placement="top" data-toggle="action" data-method="deleteSelected" href="#">
+									<i class="icon-trash"></i>
+								</a>
+							</li>
+						</ul>
+						<div id="filetree" class="jstree filetree">
+						</div>
+						<div class="create-project" >
+							<a data-toggle="action" data-method="openCreateProjectDialog" href="#">
+								<p class="create-project-text">create your first project</p>
+							</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
     </div>
-		<!-- FIM DE BARRA LATERAL -->
-		<!--  ÁREA DE TRABALHO -->
+	<!-- FIM DE BARRA LATERAL -->
+	<!--  ÁREA DE TRABALHO -->
     <div id="content">
         <div class="container-fluid">
             <!-- Horizontal tabs -->
             <div id="slidetabs" class="st-tabs-horizontal">   
                 <div class="st-tabs-container">                                                                                                                                          
-										<a href="#prev" class="st-tabs-prev"></a>
-										<div class="st-slide-container">
+					<a href="#prev" class="st-tabs-prev"></a>
+					<div class="st-slide-container">
                         <ul class="st-tabs-nav">
                             <li class="st-tabs-active">
                                 <a href="#st_content_1" rel="tab_1" class="st-tab">
@@ -159,25 +153,31 @@
                     </div>
                     <a href="#next" class="st-tabs-next"></a>                                                                                                
                 </div>
-						</div>
-				</div>
+			</div>
 		</div>
+		<div id="work">
+		<object id="foo" name="foo" type="text/html" data="home.html"></object>
+	</div>
                                 
-		<!--  JAVASCRIPT NO FIM PARA O SITE SER MAIS FLUÍDO -->
-		<script type="text/javascript">
-				var change = 1;
-				var barra = document.getElementById("content");
-				<!--  FUNÇÃO QUE ESCONDE E MOSTRA A BARRA LATERAL -->
-				function show_hide(){
-						if(change == 1){
-								barra.style.left = "0px";
-								change = 0;
-						}
-						else{
-								barra.style.left = "240px";
-								change = 1;
-						}
-				}
-		</script>		
+	<!--  JAVASCRIPT NO FIM PARA O SITE SER MAIS FLUÍDO -->
+	<script type="text/javascript">
+		var change = 1;
+		var barra = document.getElementById("content");
+		<!--  FUNÇÃO QUE ESCONDE E MOSTRA A BARRA LATERAL -->
+		function show_hide(){
+			if(change == 1){
+				barra.style.left = "0px";
+				change = 0;
+			}
+			else{
+				barra.style.left = "240px";
+				change = 1;
+			}
+		}
+		<!-- FUNÇÃO QUE ABRE OS LINKS DA BARRA LATERAL NA ÁREA DE TRABALHO -->
+		function updateObjectIframe(which){
+			document.getElementById('work').innerHTML = '<'+'object data="'+which.href+'"><\/object>';
+		}
+	</script>		
 </body>
 </html>

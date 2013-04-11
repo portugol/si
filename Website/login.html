@@ -1,0 +1,76 @@
+<html>
+	<style type="text/css">
+		body{
+			font-size: .80em;
+			font-family: "Helvetica Neue", "Lucida Grande", "Segoe UI", Arial, Helvetica, Verdana, sans-serif;
+			margin: 0px;
+			padding: 0px;
+			color: #696969;
+		}
+		
+		fieldset{
+			width: 200px;
+			margin-left: 5px;
+			padding: 1em;
+			border: 1px solid #ccc;
+		}
+
+		fieldset p{
+			margin: 2px 12px 10px 10px;
+		}
+
+		fieldset.login label, fieldset.register label, fieldset.changePassword label{
+			display: block;
+		}
+
+		fieldset label.inline{
+			display: inline;
+		}
+		
+		h2{
+			font-size: 1.5em;
+			color: #666666;
+			font-variant: small-caps;
+			text-transform: none;
+			font-weight: 600;
+			margin-bottom: 5px;
+			margin-left: 5px;
+		}
+		
+		legend{
+			font-size: 1.1em;
+			font-weight: 600;
+			padding: 2px 4px 8px 4px;
+		}
+
+		p{
+			margin-bottom: 10px;
+			margin-left: 5px;
+			line-height: 1.6em;
+		}
+	</style>
+<body>
+	<h2>Entrar</h2>
+    <p>Por favor insira o seu nome de utilizador e password. <a href="regist.html">Registe-se</a> se não tiver conta.</p>
+	
+	<div width="150px">
+        <fieldset class="login">
+            <legend>Informação de conta</legend>
+            <p>
+                <Label>Nome de Utilizador:</Label>
+                <input type="text" name="fname" />
+            </p>
+            <p>
+                <Label>Password:</Label>
+                <input type="text" name="fname" />
+            </p>
+            <p>
+                <input type="checkbox" name="sports" value="soccer"  /> Manter-me ligado
+            </p>
+        </fieldset>
+    </div>
+    
+    <button style="margin-left:80px; margin-top:5px" onClick="location.href='home.html'">Entrar</button>
+
+</body>
+</html>

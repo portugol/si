@@ -19,7 +19,7 @@
 	</style>
 	<!--  FIM DE ZONA DE TESTES DE CSS -->
 </head>
-<body>
+<body onLoad="closeTab(1);closeTab(2); closeTab(3); closeTab(4); closeTab(5); closeTab(6); closeTab(7)">
     <div id="top">
         <div class="navbar navbar-inverse">
             <div class="navbar-inner">
@@ -44,7 +44,6 @@
             </div>
         </div>
     </div>
-    
 	<!-- BARRA LATERAL -->
     <div id="sidebar">
         <div class="sidebar-inner">
@@ -74,45 +73,43 @@
             <!-- Horizontal tabs -->
             <div id="slidetabs" class="st-tabs-horizontal">   
                 <div class="st-tabs-container">                                                                                                                                          
-					<a href="#prev" class="st-tabs-prev"></a>
 					<div class="st-slide-container">
                         <ul class="st-tabs-nav">
 							<li class="tabHidden" id="ptab1">
 								<a href="tutoriais.html" onClick="updateWorkArea(this); openTab(1); return false">Tutoriais</a>
-								<button class="close" value="1" onClick="closeTab(1)">&times;</button>
+								<button class="close" value="1" onClick="closeTab(1); getNewTab(1)">&times;</button>
 							</li>
 							<li class="tabHidden" id="ptab2">
 								<a href="ide.html" onClick="updateWorkArea(this); openTab(2); return false">IDE</a>
-								<button class="close" value="2" onClick="closeTab(2)">&times;</button>
+								<button class="close" value="2" onClick="closeTab(2); getNewTab(2)">&times;</button>
 							</li>
                             <li class="tabHidden" id="ptab3">
 								<a href="home.html" onClick="updateWorkArea(this); openTab(3); return false">Opção 3</a>
-                                <button class="close" value="3" onClick="closeTab(3)">&times;</button>
+                                <button class="close" value="3" onClick="closeTab(3); getNewTab(3)">&times;</button>
                             </li>
 							<li class="tabHidden" id="ptab4">
 								<a href="home.html" onClick="updateWorkArea(this); openTab(4); return false">Opção 4</a>
-                                <button class="close" value="4" onClick="closeTab(4)">&times;</button>
+                                <button class="close" value="4" onClick="closeTab(4); getNewTab(4)">&times;</button>
                             </li>
 							<li class="tabHidden" id="ptab5"> 
 								<a href="home.html" onClick="updateWorkArea(this); openTab(5); return false">Opção 5</a>
-                                <button class="close" value="5" onClick="closeTab(5)">&times;</button>
+                                <button class="close" value="5" onClick="closeTab(5); getNewTab(5)">&times;</button>
                             </li>
 							<li class="tabHidden" id="ptab6">
 								<a href="home.html" onClick="updateWorkArea(this); openTab(6); return false">Opção 6</a>
-                                <button class="close" value="6" onClick="closeTab(6)">&times;</button>
+                                <button class="close" value="6" onClick="closeTab(6); getNewTab(6)">&times;</button>
                             </li>
 							<li class="tabHidden" id="ptab7">
 								<a href="home.html" onClick="updateWorkArea(this); openTab(7); return false">Opção 7</a>
-                                <button class="close" value="7" onClick="closeTab(7)">&times;</button>
+                                <button class="close" value="7" onClick="closeTab(7); getNewTab(7)">&times;</button>
                             </li>
                         </ul>
-                    </div>
-                    <a href="#next" class="st-tabs-next"></a>                                                                                                
+                    </div>                                                                                                
                 </div>
 			</div>
 		</div>
 		<div id="work">
-			<object id="foo" name="foo" type="text/html" data="home.html"></object>
+			<object type="text/html" data="home.html"></object>
 		</div>
     </div>              
 	
@@ -128,16 +125,15 @@
 			alwaysLowered = false;
 		}
 		
-		var change = 1;
-		var barra = document.getElementById("content");
 		// FUNÇÃO QUE ESCONDE E MOSTRA A BARRA LATERAL
+		var change = 1;
 		function show_hide(){
 			if(change == 1){
-				barra.style.left = "0px";
+				document.getElementById("content").style.left = "0px";
 				change = 0;
 			}
 			else{
-				barra.style.left = "240px";
+				document.getElementById("content").style.left = "240px";
 				change = 1;
 			}
 		}
@@ -154,7 +150,7 @@
 			document.getElementById("ptab"+value).setAttribute("class", "st-tabs-active");
 			//Colocar os outros tabs não ativos sem fazer aparecer os escondidos
 			for(i=1 ; i<8 ; i++){
-				if(i!=value && document.getElementById("ptab"+i).className=="st-tabs-active"){
+				if(i!=value && document.getElementById("ptab"+i).className == "st-tabs-active"){
 					document.getElementById("ptab"+i).setAttribute("class", "");
 				}
 			}
@@ -163,6 +159,20 @@
 		//FUNÇÃO QUE FECHA AS TABS DA BARRA DE NAVEGAÇÃO
 		function closeTab(value){
 			document.getElementById("ptab"+value).style.display="none";
+		}
+		
+		//FUNÇÃO QUE PROCURA A TAB CERTA PARA ABRIR SEMPRE QUE SE FECHE ALGUMA
+		function getNewTab(value){
+			for(i=1 ; i<8 ; i++){
+				if(document.getElementById("ptab"+i).className == "st-tabs-active")
+					break;
+			}
+			/*for(i=value-1 ; i>0 ; i--){
+				if(document.getElementById("ptab"+i).style.display != "none"){
+					document.getElementById("ptab"+i).setAttribute("class", "st-tabs-active");
+					break;
+				}
+			}*/
 		}
 	</script>
 </body>

@@ -1,0 +1,13 @@
+MIX INTEIROS E REAIS
+--------------------
+Mixing Integer and Real Numbers
+
+O código java seguinte representa o mix entre inteiros e reais:
+
+float A = 10.9F; 
+float B = 1.75F; 
+int N; 
+N = (int) Math.max (A, B); 
+System.out.println (“N =” + N); 
+
+Note-se que o resultado do método max gera um valor de 10.9 que vai ser truncado para um valor de 10 quando passado para inteiro para a variavel N.

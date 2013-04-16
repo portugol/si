@@ -1,0 +1,29 @@
+MOD(%)
+------
+O java tem um importante operador aritmético com o qual podem não estar muito familiarizados, define-se por (%) e representa o resto da divisão. Por exemplo 10 % 3 = 1 pois 10 dividido por 3 dá resto 1. Podemos usar este operador tal como qualquer outro operador.
+
+class Remainder {
+
+  public static void main (String args[]) {
+
+    int i = 10;
+    int j = 3;
+
+    System.out.println("i é " + i);
+    System.out.println("j é " + j);
+  
+    int k = i % j;
+    System.out.println("i%j é " + k);
+  }
+
+}
+
+Aqui está o resultado: 
+% javac Remainder.java
+% java Remainder
+i é 10
+j é 3
+i%j é 1
+
+O que está a baixo será necessario? (divisao com reais)
+"Perhaps surprisingly the remainder operator can be used with floating point values as well. It's surprising because you don't normally think of real number division as producing remainders. However there are rare times when it's useful to ask exactly how many times does 1.5 go into 5.5 and what's left over? The answer is that 1.5 goes into 5.5 three times with one left over, and it's that one which is the result of 5.5 % 1.5 in Java. "

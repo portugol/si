@@ -1,0 +1,6 @@
+CALCULO COM REAIS
+-----------------
+Isto refere-se à ordem das operações??
+Se sim, nesta aula basta apresentar uma tabela com a ordem das operações e falar um pouco de cada uma penso eu...
+http://doc.sumy.ua/prog/java/langref/ch04_14.htm
+http://docs.oracle.com/javase/tutorial/java/nutsandbolts/operators.html

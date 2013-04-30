@@ -2,12 +2,15 @@ MIX INTEIROS E REAIS
 --------------------
 Mixing Integer and Real Numbers
 
-O código java seguinte representa o mix entre inteiros e reais:
+Ola, o meu nome é 'ZEBEDEUS' e nesta aula vamos falar de mix de inteiros e reais.
+Os números inteiros são constituídos dos números naturais, incluindo o zero (0, 1, 2, 3, ...) e todos números negativos simétricos aos números naturais não nulos (-1, -2, -3,-4 ...). Dois números são simétricos se, e somente se, sua soma é zero.
+O conjunto dos números reais (R), é uma expansão do conjunto dos números racionais que engloba não só os inteiros e os fracionários, positivos e negativos, mas também todos os números irracionais.
 
+(O QUE FAZER COM ESTE CODIGO?)
+O código java seguinte representa o mix entre inteiros e reais:
 float A = 10.9F; 
 float B = 1.75F; 
 int N; 
 N = (int) Math.max (A, B); 
 System.out.println (“N =” + N); 
-
 Note-se que o resultado do método max gera um valor de 10.9 que vai ser truncado para um valor de 10 quando passado para inteiro para a variavel N.

@@ -4,3 +4,11 @@ Isto refere-se à ordem das operações??
 Se sim, nesta aula basta apresentar uma tabela com a ordem das operações e falar um pouco de cada uma penso eu...
 http://doc.sumy.ua/prog/java/langref/ch04_14.htm
 http://docs.oracle.com/javase/tutorial/java/nutsandbolts/operators.html
+
+
+In an expression that contains multiple operators, Java uses a number of rules to decide the order in which the operators are evaluated. The first and most important rule is called operator precedence. 
+
+Ola, o meu nome é 'ZEBEDEUS' e nesta aula vamos falar de operações com reais.
+Uma expressão que contem multiplos operadores, é usado um conjunto de regras para decidir a ordem em que as operações sao efectuadas.
+
+[Mostrar tabela e dizer o que significa cada operador]

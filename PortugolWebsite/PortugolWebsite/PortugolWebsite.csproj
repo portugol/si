@@ -1,0 +1,368 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{A2F30AD7-8059-415C-86BA-D18F7D9E0157}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>PortugolWebsite</RootNamespace>
+    <AssemblyName>PortugolWebsite</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <UseIISExpress>true</UseIISExpress>
+    <IISExpressSSLPort />
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+    <SccProjectName>
+    </SccProjectName>
+    <SccLocalPath>
+    </SccLocalPath>
+    <SccAuxPath>
+    </SccAuxPath>
+    <SccProvider>
+    </SccProvider>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="Microsoft.Practices.EnterpriseLibrary.Caching, Version=5.0.414.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>DLL\Microsoft.Practices.EnterpriseLibrary.Caching.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Practices.EnterpriseLibrary.Caching.Database, Version=5.0.414.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>DLL\Microsoft.Practices.EnterpriseLibrary.Caching.Database.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Practices.EnterpriseLibrary.Common, Version=5.0.414.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>DLL\Microsoft.Practices.EnterpriseLibrary.Common.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Practices.EnterpriseLibrary.Data, Version=5.0.414.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>DLL\Microsoft.Practices.EnterpriseLibrary.Data.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Practices.ServiceLocation, Version=1.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>DLL\Microsoft.Practices.ServiceLocation.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Practices.Unity, Version=2.0.414.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>DLL\Microsoft.Practices.Unity.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Practices.Unity.Interception, Version=2.0.414.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>DLL\Microsoft.Practices.Unity.Interception.dll</HintPath>
+    </Reference>
+    <Reference Include="MySql.Data.Entity, Version=6.3.5.0, Culture=neutral, PublicKeyToken=c5687fc88969c44d, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>DLL\MySql.Data.Entity.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Account\ChangePassword.aspx" />
+    <Content Include="Account\css\login.css" />
+    <Content Include="Account\Login.aspx" />
+    <Content Include="Account\MyProfile.aspx" />
+    <Content Include="Account\RecoverPassword.aspx" />
+    <Content Include="Account\Register.aspx" />
+    <Content Include="Account\RegisterSuccess.aspx" />
+    <Content Include="Account\UpdateProfileSuccess.aspx" />
+    <Content Include="calculo.html" />
+    <Content Include="css\allcss.css" />
+    <Content Include="css\IdeStyle.css" />
+    <Content Include="DLL\Microsoft.Practices.EnterpriseLibrary.Caching.Database.dll" />
+    <Content Include="DLL\Microsoft.Practices.EnterpriseLibrary.Caching.dll" />
+    <Content Include="DLL\Microsoft.Practices.EnterpriseLibrary.Common.dll" />
+    <Content Include="DLL\Microsoft.Practices.EnterpriseLibrary.Data.dll" />
+    <Content Include="DLL\Microsoft.Practices.ServiceLocation.dll" />
+    <Content Include="DLL\Microsoft.Practices.Unity.dll" />
+    <Content Include="DLL\Microsoft.Practices.Unity.Interception.dll" />
+    <Content Include="DLL\MySql.Data.Entity.dll" />
+    <Content Include="ErrorPages\FileNotFound.html" />
+    <Content Include="ErrorPages\GenericErrorPage.html" />
+    <Content Include="ErrorPages\NoAccess.html" />
+    <Content Include="Global.asax" />
+    <Content Include="home.html" />
+    <Content Include="ide.html" />
+    <Content Include="img\arrays 5.jpg" />
+    <Content Include="img\back.png" />
+    <Content Include="img\bandeiras\england.gif" />
+    <Content Include="img\bandeiras\france.gif" />
+    <Content Include="img\bandeiras\germany.gif" />
+    <Content Include="img\bandeiras\holland.gif" />
+    <Content Include="img\bandeiras\italy.gif" />
+    <Content Include="img\bandeiras\portugal.gif" />
+    <Content Include="img\bandeiras\russia.gif" />
+    <Content Include="img\bandeiras\spain.gif" />
+    <Content Include="img\calculo 91.jpg" />
+    <Content Include="img\decisão 9.jpg" />
+    <Content Include="img\Emblema.psd" />
+    <Content Include="img\emConstrucao.png" />
+    <Content Include="img\funcoes 3.jpg" />
+    <Content Include="img\home.png" />
+    <Content Include="img\logo.png" />
+    <Content Include="img\repetição 1.jpg" />
+    <Content Include="img\sidebar.jpg" />
+    <Content Include="img\top.jpg" />
+    <Content Include="Index.aspx" />
+    <Content Include="index.html" />
+    <Content Include="index2.html" />
+    <Content Include="javascript_IDE\connection.js" />
+    <Content Include="javascript_IDE\editor.js" />
+    <Content Include="javascript_IDE\graph.js" />
+    <Content Include="javascript_IDE\jquery.min.js" />
+    <Content Include="javascript_IDE\node.js" />
+    <Content Include="javascript_IDE\nodev.js" />
+    <Content Include="javascript_IDE\raphael-min.js" />
+    <Content Include="login.html" />
+    <Content Include="Pages\Ide.aspx" />
+    <Content Include="Pages\Realizateste.aspx" />
+    <Content Include="Pages\Teste.aspx" />
+    <Content Include="Pages\Tutoriais.aspx" />
+    <Content Include="php\css\application-ltr-a256b57024170c98ba019bc1c06cf31f.css" />
+    <Content Include="php\css\application-ltr3-81daf122e1788730417e886545a44f59.css" />
+    <Content Include="php\css\bootstrap-401cbb0c7673d09a5919d5288002542c.css" />
+    <Content Include="php\forms.js" />
+    <Content Include="php\sha512.js" />
+    <Content Include="Scripts\Javascript_IDE\connection.js" />
+    <Content Include="Scripts\Javascript_IDE\editor.js" />
+    <Content Include="Scripts\Javascript_IDE\graph.js" />
+    <Content Include="Scripts\Javascript_IDE\jquery.min.js" />
+    <Content Include="Scripts\Javascript_IDE\node.js" />
+    <Content Include="Scripts\Javascript_IDE\nodev.js" />
+    <Content Include="Scripts\Javascript_IDE\raphael-min.js" />
+    <Content Include="tutoriais.html" />
+    <Content Include="Web.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Account\ChangePassword.aspx.cs">
+      <DependentUpon>ChangePassword.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Account\ChangePassword.aspx.designer.cs">
+      <DependentUpon>ChangePassword.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Account\Login.aspx.cs">
+      <DependentUpon>Login.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Account\Login.aspx.designer.cs">
+      <DependentUpon>Login.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Account\MyProfile.aspx.cs">
+      <DependentUpon>MyProfile.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Account\MyProfile.aspx.designer.cs">
+      <DependentUpon>MyProfile.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Account\RecoverPassword.aspx.cs">
+      <DependentUpon>RecoverPassword.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Account\RecoverPassword.aspx.designer.cs">
+      <DependentUpon>RecoverPassword.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Account\Register.aspx.cs">
+      <DependentUpon>Register.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Account\Register.aspx.designer.cs">
+      <DependentUpon>Register.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Account\RegisterSuccess.aspx.cs">
+      <DependentUpon>RegisterSuccess.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Account\RegisterSuccess.aspx.designer.cs">
+      <DependentUpon>RegisterSuccess.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Account\UpdateProfileSuccess.aspx.cs">
+      <DependentUpon>UpdateProfileSuccess.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Account\UpdateProfileSuccess.aspx.designer.cs">
+      <DependentUpon>UpdateProfileSuccess.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="App_GlobalResources\ErrorMessages.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ErrorMessages.resx</DependentUpon>
+    </Compile>
+    <Compile Include="App_GlobalResources\InfoMessages.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>InfoMessages.resx</DependentUpon>
+    </Compile>
+    <Compile Include="App_GlobalResources\SuccessMessages.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>SuccessMessages.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Code\BLL\BusinessCapitulo.cs" />
+    <Compile Include="Code\CustomMembership\CustomMembershipProvider.cs" />
+    <Compile Include="Code\CustomMembership\CustomMembershipRole.cs" />
+    <Compile Include="Code\CustomMembership\CustomMembershipUser.cs" />
+    <Compile Include="Code\DAL\CapituloDataAccess.cs" />
+    <Compile Include="Code\DAL\DataAccessLayer.cs" />
+    <Compile Include="Code\DAL\Queries\CapituloQueries.cs" />
+    <Compile Include="Code\DAL\Queries\RoleQueries.cs" />
+    <Compile Include="Code\DAL\Queries\UserQueries.cs" />
+    <Compile Include="Code\DAL\RoleDataAccess.cs" />
+    <Compile Include="Code\DAL\UserDataAccess.cs" />
+    <Compile Include="Code\Shared\SharedFunctions.cs" />
+    <Compile Include="Global.asax.cs">
+      <DependentUpon>Global.asax</DependentUpon>
+    </Compile>
+    <Compile Include="Index.aspx.cs">
+      <DependentUpon>Index.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Index.aspx.designer.cs">
+      <DependentUpon>Index.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\Ide.aspx.cs">
+      <DependentUpon>Ide.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Pages\Ide.aspx.designer.cs">
+      <DependentUpon>Ide.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\Realizateste.aspx.cs">
+      <DependentUpon>Realizateste.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Pages\Realizateste.aspx.designer.cs">
+      <DependentUpon>Realizateste.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\Teste.aspx.cs">
+      <DependentUpon>Teste.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Pages\Teste.aspx.designer.cs">
+      <DependentUpon>Teste.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\Tutoriais.aspx.cs">
+      <DependentUpon>Tutoriais.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Pages\Tutoriais.aspx.designer.cs">
+      <DependentUpon>Tutoriais.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="PortugolWebSite.Master.cs">
+      <DependentUpon>PortugolWebSite.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="PortugolWebSite.Master.designer.cs">
+      <DependentUpon>PortugolWebSite.Master</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="php\db_connect.php" />
+    <Content Include="php\functions.php" />
+    <Content Include="php\login.php" />
+    <Content Include="php\logout.php" />
+    <Content Include="php\process_login.php" />
+    <Content Include="php\registration.php" />
+    <Content Include="PortugolWebSite.Master" />
+    <None Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+    <None Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Scripts\Javascript\" />
+    <Folder Include="Scripts\JQuery\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="App_GlobalResources\ErrorMessages.resx">
+      <Generator>GlobalResourceProxyGenerator</Generator>
+      <LastGenOutput>ErrorMessages.Designer.cs</LastGenOutput>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="App_GlobalResources\InfoMessages.resx">
+      <Generator>GlobalResourceProxyGenerator</Generator>
+      <LastGenOutput>InfoMessages.Designer.cs</LastGenOutput>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="App_GlobalResources\SuccessMessages.resx">
+      <Generator>GlobalResourceProxyGenerator</Generator>
+      <LastGenOutput>SuccessMessages.Designer.cs</LastGenOutput>
+    </Content>
+  </ItemGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>False</UseIIS>
+          <AutoAssignPort>False</AutoAssignPort>
+          <DevelopmentServerPort>49932</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>http://localhost:49255/</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

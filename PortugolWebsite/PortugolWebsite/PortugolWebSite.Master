@@ -1,0 +1,117 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="PortugolWebSite.master.cs" Inherits="PortugolWebsite.PortugolWebSite" %>
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title>Portugol website</title>
+
+    <link rel="stylesheet" href="css/allcss.css" />
+
+    <asp:ContentPlaceHolder ID="ContentHead" runat="server"></asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="MasterForm" runat="server">
+        
+        <div id="divHiddenFields">
+            <asp:HiddenField ID="hiddenShow_hide" value="1" runat="server" />
+        </div>
+
+        <div id="top">
+            <div class="navbar navbar-inverse">
+                <div class="navbar-inner">
+                    <div class="wrapper" >
+                        <ul class="nav pull-left">
+                            <li>
+							    <button id="btnHide" class="btn btn-navbar" onclick="show_hide(); return false;" title="Fechar Menu">
+								    <span class="icon-bar"></span>
+                                    <span class="icon-bar"></span>
+                                    <span class="icon-bar"></span>	
+                                    </button>
+							    
+                            </li>
+                        </ul>
+                        <a id="logo" class="brand" href="/Index.aspx" title="Página Inicial"></a>
+					    <button class="btn btn-inverse hidden-phone pull-right">Registar-se</button>
+					    <ul class="nav pull-right" style="margin-right: 0;">
+						    <li>
+							    <a href="Account/Login.aspx" >Entrar</a>						  
+						    </li>
+					    </ul>
+				    </div>
+                </div>
+            </div>
+        </div>
+
+	    <!-- BARRA LATERAL -->
+        <div id="sidebar">
+            <div class="sidebar-inner">
+                <ul id="menu" class="nav nav-list">
+                    <li><a href="/Pages/Tutoriais.aspx">Tutoriais</a></li>
+                    <li><a href="/Pages/Ide.aspx">IDE</a></li>
+                    <li><a href="/Pages/Realizateste.aspx">Realizar Teste</a></li>
+                    <li><a href="#">Opção 4</a></li>
+                    <li><a href="#">Opção 5</a></li>
+                    <li><a href="#">Opção 6</a></li>                              
+                    <li><a href="#">Opção 7</a></li>
+				    <!-- RODAPÉ DA BARRA LATERAL -->
+                    <li>
+                        <footer id="footer" class="footer">
+                            <div class="divider"></div>
+                            <p class="copyright">&copy; 2013 Portugol IDE</p>
+                        </footer>    
+                    </li>
+				    <!-- FIM DE RODAPÉ DA BARRA LATERAL -->
+                </ul>
+		    </div>
+        </div>
+	    <!-- FIM DE BARRA LATERAL -->
+
+	    <!--  ÁREA DE TRABALHO -->
+        <div id="content">
+            <div class="container-fluid">
+                <!-- Horizontal tabs -->
+                <div id="slidetabs" class="st-tabs-horizontal">   
+                    <div class="st-tabs-container">                                                                                                                                          
+					    <div class="st-slide-container">
+                            <ul class="st-tabs-nav">
+							    <li class="tabHidden" id="ptab1">
+								    <a id="pptab1" href="tutoriais.html" >Tutoriais</a>
+								    <button class="close" value="1" title="Fechar">&times;</button>
+							    </li>
+							    <li class="tabHidden" id="ptab2">
+								    <a id="pptab2" href="ide.html">IDE</a>
+								    <button class="close" value="2" title="Fechar">&times;</button>
+							    </li>
+                                <li class="tabHidden" id="ptab3">
+								    <a id="pptab3" href="home.html">Teste</a>
+                                    <button class="close" value="3" title="Fechar">&times;</button>
+                                </li>
+							    <li class="tabHidden" id="ptab4">
+								    <a id="pptab4" href="home.html">Opção 4</a>
+                                    <button class="close" value="4" title="Fechar">&times;</button>
+                                </li>
+							    <li class="tabHidden" id="ptab5"> 
+								    <a id="pptab5" href="home.html">Opção 5</a>
+                                    <button class="close" value="5" title="Fechar">&times;</button>
+                                </li>
+							    <li class="tabHidden" id="ptab6">
+								    <a id="pptab6" href="home.html">Opção 6</a>
+                                    <button class="close" value="6" title="Fechar">&times;</button>
+                                </li>
+							    <li class="tabHidden" id="ptab7">
+								    <a id="pptab7" href="home.html">Opção 7</a>
+                                    <button class="close" value="7">&times;</button>
+                                </li>
+                            </ul>
+                        </div>	
+                    </div>	
+			    </div>
+		    </div>
+		    <div id="divWorkArea" class="WorkArea">
+			    <asp:ContentPlaceHolder ID="MainContent" runat="server"/>
+		    </div>
+        </div>   
+    </form>
+</body>
+</html>

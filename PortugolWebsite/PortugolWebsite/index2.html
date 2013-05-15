@@ -1,0 +1,158 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="pt-pt" xml:lang="pt-pt">
+<head>
+    <title>Portugol</title>
+	<link rel="stylesheet" href="css/allcss.css" />
+</head>
+<body>
+    <div id="top">
+        <div class="navbar navbar-inverse">
+            <div class="navbar-inner">
+                <div class="wrapper">
+                    <ul class="nav pull-left">
+                        <li>
+							<button id="btnHide" class="btn btn-navbar" onclick="show_hide()" title="Fechar Menu">
+								<span class="icon-bar"></span>
+                                <span class="icon-bar"></span>
+                                <span class="icon-bar"></span>	
+							</button>
+                        </li>
+                    </ul>
+                    <a id="logo" class="brand" href="home.html" title="Página Inicial"></a>
+					<button class="btn btn-inverse hidden-phone pull-right">Registar-se</button>
+					<ul class="nav pull-right" style="margin-right: 0;">
+						<li>
+							<a href="php/login.php">Entrar</a>
+						</li>
+					</ul>
+				</div>
+            </div>
+        </div>
+    </div>
+	<!-- BARRA LATERAL -->
+    <div id="sidebar">
+        <div class="sidebar-inner">
+            <ul id="menu" class="nav nav-list">
+                <li><a href="#">Tutoriais</a></li>
+                <li><a href="#">IDE</a></li>
+                <li><a href="#">Realizar Teste</a></li>
+
+				<!-- RODAPÉ DA BARRA LATERAL -->
+                <li>
+                    <footer id="footer" class="footer">
+                        <div class="divider"></div>
+                        <p class="copyright">&copy; 2013 Portugol IDE</p>
+                    </footer>    
+                </li>
+				<!-- FIM DE RODAPÉ DA BARRA LATERAL -->
+            </ul>
+		</div>
+    </div>
+
+    
+	<!-- FIM DE BARRA LATERAL -->
+	<!--  ÁREA DE TRABALHO -->
+    <div id="content">
+        <div class="">
+            <!-- Horizontal tabs -->
+
+            <div id="wrapper" class="st-tabs-horizontal">
+              <div id="tabContainer" class="st-tabs-container">
+                <div class="st-slide-container">
+                  <ul class="st-tabs-nav">
+                    <li id="tabHeader_1" class="tabHidden">
+                        <a id="pptab1" href="#">Tutoriais</a>
+                        <button class="close" value="1" title="Fechar">&times;</button>
+                    </li>
+                    <li id="tabHeader_2" class="tabHidden">
+                        <a id="pptab2" href="#">IDE</a>
+                        <button class="close" value="2" title="Fechar">&times;</button>
+                    </li>
+                    <li id="tabHeader_3" class="tabHidden">
+                        <a id="pptab3" href="#">Teste</a> 
+                        <button class="close" value="3" title="Fechar">&times;</button>
+                    </li>
+                  </ul>
+                </div>
+                <div>
+                  <div class="tabpage" id="tabpage_1">
+                    <h2>Page 1</h2>
+                    <iframe class="ifc" src="tutoriais.html"></iframe>
+                  </div>
+                  <div class="tabpage" id="tabpage_2">
+                    <h2>Page 2</h2>
+                    <iframe class="ifc" src="ide.html"></iframe>
+                  </div>
+                  <div class="tabpage" id="tabpage_3">
+                    <h2>Page 3</h2>
+                    <p style="color:red">Pellentesque habitant morbi tristique senectus...</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+
+
+        </div>
+    </div>
+	
+	<!--  JAVASCRIPT NO FIM PARA O SITE SER MAIS FLUÍDO -->
+	<script type="text/javascript">
+
+	    window.onload = function () {
+
+	        // get tab container
+	        var container = document.getElementById("tabContainer");
+	        // set current tab
+	        var navitem = container.querySelector(".st-slide-container ul li");
+	        //store which tab we are on
+	        var ident = navitem.id.split("_")[1];
+	        navitem.parentNode.setAttribute("data-current", ident);
+	        //set current tab with class of activetabheader
+	        navitem.setAttribute("class", "");
+
+	        //hide two tab contents we don't need
+	        var pages = container.querySelectorAll(".tabpage");
+	        for (var i = 0; i < pages.length; i++) {
+	            pages[i].style.display = "none";
+	        }
+
+	        //this adds click event to tabs
+	        var tabs = container.querySelectorAll(".st-slide-container ul li");
+	        for (var i = 0; i < tabs.length; i++) {
+	            tabs[i].onclick = displayPage;
+	        }
+
+	        var teste = container.querySelectorAll(".ifc");
+	
+	        for (var i = 0; i < teste.length; i++) {
+	            
+	            teste[i].height = screen.height - 110;
+	            teste[i].width = screen.width - 235;
+	            
+	        }
+            
+	      
+	    }
+
+	    // on click of one of tabs
+	    function displayPage() {
+	        
+	        var current = this.parentNode.getAttribute("data-current");
+	        
+	        //remove class of activetabheader and hide old contents
+	        document.getElementById("tabHeader_" + current).removeAttribute("class");
+	        
+	        document.getElementById("tabpage_" + current).style.display = "none";
+
+	        var ident = this.id.split("_")[1];
+	        alert(this.id);
+	        //add class of activetabheader to new active tab and show contents
+	        this.setAttribute("class", "");
+	        document.getElementById("tabpage_" + ident).style.display = "block";
+	        this.parentNode.setAttribute("data-current", ident);
+	        
+	    }
+	</script>
+</body>
+</html>

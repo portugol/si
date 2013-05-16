@@ -11,7 +11,7 @@
     <div class="content">
         <br />
         <p>
-            <h2 class="sign-in-to">&nbsp; <asp:Literal ID="Literal11" Text="Entrar no Portugol" runat="server"></asp:Literal></h2>
+            <h2 class="sign-in-to">&nbsp; <asp:Literal ID="Literal11" Text="Entrar" runat="server"></asp:Literal></h2>
         </p>
         <div class="cf module" id="user-session-form">
             <div class="cell social-signin">
@@ -23,27 +23,29 @@
             </div>
             <div class="cell neutral email-signin">
                 <h4><asp:Literal ID="Literal5" Text="Preencha os campos em baixo..." runat="server"></asp:Literal></h4>
-                <span class="or module"><asp:Literal ID="Literal6" Text="ou" runat="server"></asp:Literal></span>
+                <span class="or module"><asp:Literal ID="Literal6" Text="OU" runat="server"></asp:Literal></span>
                 <asp:Login ID="Login1"  runat="server">
                     <LayoutTemplate>
                         <div style="margin: 0; padding: 0; display: inline">
                     
-                            <asp:Literal ID="Literal4" Text="(*) Username:" runat="server"></asp:Literal>
+                            <asp:Literal ID="user" Text="(*) Username:" runat="server"></asp:Literal>
                                 <asp:TextBox ID="UserName" runat="server"></asp:TextBox>
                             <br />
-                            <asp:Literal ID="Literal3" Text="(*) Password:" runat="server"></asp:Literal>
+                            <asp:Literal ID="pass" Text="(*) Password:" runat="server"></asp:Literal>
                             <asp:TextBox ID="Password" runat="server"></asp:TextBox>
                             <br />
                             <div class="remember-me">
-                                <asp:CheckBox ID="RememberMe" runat="server" />
-                                <label for="user_remember_me"><asp:Literal ID="Literal1" Text="Mantenha-me sempre ligado!" runat="server"></asp:Literal></label>
-                                <a href="#" class="secondary"><asp:Literal ID="Literal2" Text="Esqueceu sua senha?" runat="server"></asp:Literal></a>
+                                <label for="user_remember_me"><asp:CheckBox ID="RememberMe" runat="server" />                                
+                                    <asp:Literal ID="online" Text="Mantenha-me sempre ligado!" runat="server"></asp:Literal>
+                                </label>                            
                             </div>
                             <asp:Button ID="Login" CommandName="Login" runat="server" Text="Login" />  
-                            <hr />                          
-                            <div style="color: red">
-                                <asp:Literal ID="FailureText" Text="Mensagem de erro ! exemplo Username or Password incorrectos!" runat="server"></asp:Literal>
-                            </div>
+                            <label>
+                                <hr />
+                            <a href="#" class="secondary"><asp:Literal ID="recoverypass" Text="Esqueceu sua senha?" runat="server"></asp:Literal></a></label>                    
+                            <br />
+                           <a href="#" class="secondary"><asp:Literal ID="Literal1" Text="Registar-me!" runat="server"></asp:Literal></a></label>
+                             
                    
                         </div>
                      </LayoutTemplate>
@@ -77,5 +79,4 @@
                 ref.parentNode.insertBefore(js, ref);
             }(document));
         </script>
-    
 </asp:Content>

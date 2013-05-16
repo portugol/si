@@ -10,9 +10,9 @@
 <asp:Content ID="ContentMain" ContentPlaceHolderID="MainContent" runat="server">
     <div class="content">
         <br />
-        <p>
+        <br />
             <h2 class="sign-in-to">&nbsp; <asp:Literal ID="Literal11" Text="Entrar" runat="server"></asp:Literal></h2>
-        </p>
+        
         <div class="cf module" id="user-session-form">
             <div class="cell social-signin">
 
@@ -44,9 +44,7 @@
                                 <hr />
                             <a href="#" class="secondary"><asp:Literal ID="recoverypass" Text="Esqueceu sua senha?" runat="server"></asp:Literal></a></label>                    
                             <br />
-                           <a href="#" class="secondary"><asp:Literal ID="Literal1" Text="Registar-me!" runat="server"></asp:Literal></a></label>
-                             
-                   
+                           <a href="#" class="secondary"><asp:Literal ID="Literal1" Text="Registar-me!" runat="server"></asp:Literal></a></label>                  
                         </div>
                      </LayoutTemplate>
                 </asp:Login>

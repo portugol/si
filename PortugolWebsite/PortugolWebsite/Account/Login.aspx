@@ -39,7 +39,8 @@
                                 <label for="user_remember_me"><asp:Literal ID="Literal1" Text="Mantenha-me sempre ligado!" runat="server"></asp:Literal></label>
                                 <a href="#" class="secondary"><asp:Literal ID="Literal2" Text="Esqueceu sua senha?" runat="server"></asp:Literal></a>
                             </div>
-                            <asp:Button ID="Login" CommandName="Login" runat="server" Text="Login" />                            
+                            <asp:Button ID="Login" CommandName="Login" runat="server" Text="Login" />  
+                            <hr />                          
                             <div style="color: red">
                                 <asp:Literal ID="FailureText" Text="Mensagem de erro ! exemplo Username or Password incorrectos!" runat="server"></asp:Literal>
                             </div>

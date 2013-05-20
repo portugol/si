@@ -75,6 +75,10 @@
       <SpecificVersion>False</SpecificVersion>
       <HintPath>DLL\Microsoft.Practices.Unity.Interception.dll</HintPath>
     </Reference>
+    <Reference Include="MySql.Data, Version=6.6.5.0, Culture=neutral, PublicKeyToken=c5687fc88969c44d, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>DLL\MySql.Data.dll</HintPath>
+    </Reference>
     <Reference Include="MySql.Data.Entity, Version=6.3.5.0, Culture=neutral, PublicKeyToken=c5687fc88969c44d, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
       <HintPath>DLL\MySql.Data.Entity.dll</HintPath>
@@ -109,6 +113,7 @@
     <Content Include="css\allcss.css" />
     <Content Include="css\forum.css" />
     <Content Include="css\IdeStyle.css" />
+    <Content Include="css\StyleMaster.css" />
     <Content Include="DLL\Microsoft.Practices.EnterpriseLibrary.Caching.Database.dll" />
     <Content Include="DLL\Microsoft.Practices.EnterpriseLibrary.Caching.dll" />
     <Content Include="DLL\Microsoft.Practices.EnterpriseLibrary.Common.dll" />
@@ -116,6 +121,7 @@
     <Content Include="DLL\Microsoft.Practices.ServiceLocation.dll" />
     <Content Include="DLL\Microsoft.Practices.Unity.dll" />
     <Content Include="DLL\Microsoft.Practices.Unity.Interception.dll" />
+    <Content Include="DLL\MySql.Data.dll" />
     <Content Include="DLL\MySql.Data.Entity.dll" />
     <Content Include="ErrorPages\FileNotFound.html" />
     <Content Include="ErrorPages\GenericErrorPage.html" />
@@ -125,6 +131,15 @@
     <Content Include="ide.html" />
     <Content Include="img\arrays 5.jpg" />
     <Content Include="img\back.png" />
+    <Content Include="img\backoffice\calendar.gif" />
+    <Content Include="img\backoffice\md_r2_c2.gif" />
+    <Content Include="img\backoffice\md_r2_c3.gif" />
+    <Content Include="img\backoffice\md_r2_c4.gif" />
+    <Content Include="img\backoffice\md_r4_c2.gif" />
+    <Content Include="img\backoffice\md_r5_c4.gif" />
+    <Content Include="img\backoffice\md_r8_c2.gif" />
+    <Content Include="img\backoffice\md_r8_c3.gif" />
+    <Content Include="img\backoffice\md_r8_c4.gif" />
     <Content Include="img\bandeiras\england.gif" />
     <Content Include="img\bandeiras\france.gif" />
     <Content Include="img\bandeiras\germany.gif" />
@@ -154,6 +169,11 @@
     <Content Include="javascript_IDE\nodev.js" />
     <Content Include="javascript_IDE\raphael-min.js" />
     <Content Include="login.html" />
+    <Content Include="menu\menu_Admin.xml" />
+    <Content Include="Pages\BackOffice\Capitulo\Apagar.aspx" />
+    <Content Include="Pages\BackOffice\Capitulo\Editar.aspx" />
+    <Content Include="Pages\BackOffice\Capitulo\Inserir.aspx" />
+    <Content Include="Pages\BackOffice\Capitulo\Listar.aspx" />
     <Content Include="Pages\Forum\createTopic.aspx" />
     <Content Include="Pages\Forum\forum.aspx" />
     <Content Include="Pages\Forum\postReply.aspx" />
@@ -266,6 +286,41 @@
     <Compile Include="Index.aspx.designer.cs">
       <DependentUpon>Index.aspx</DependentUpon>
     </Compile>
+    <Compile Include="MasterPage.master.cs">
+      <DependentUpon>MasterPage.master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="MasterPage.master.designer.cs">
+      <DependentUpon>MasterPage.master</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\BackOffice\Capitulo\Apagar.aspx.cs">
+      <DependentUpon>Apagar.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Pages\BackOffice\Capitulo\Apagar.aspx.designer.cs">
+      <DependentUpon>Apagar.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\BackOffice\Capitulo\Editar.aspx.cs">
+      <DependentUpon>Editar.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Pages\BackOffice\Capitulo\Editar.aspx.designer.cs">
+      <DependentUpon>Editar.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\BackOffice\Capitulo\Inserir.aspx.cs">
+      <DependentUpon>Inserir.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Pages\BackOffice\Capitulo\Inserir.aspx.designer.cs">
+      <DependentUpon>Inserir.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\BackOffice\Capitulo\Listar.aspx.cs">
+      <DependentUpon>Listar.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Pages\BackOffice\Capitulo\Listar.aspx.designer.cs">
+      <DependentUpon>Listar.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Pages\Forum\createTopic.aspx.cs">
       <DependentUpon>createTopic.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -332,6 +387,7 @@
     <Content Include="php\process_login.php" />
     <Content Include="php\registration.php" />
     <Content Include="PortugolWebSite.Master" />
+    <Content Include="MasterPage.master" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
@@ -340,7 +396,6 @@
     </None>
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="Pages\BackOffice\" />
     <Folder Include="Scripts\Javascript\" />
     <Folder Include="Scripts\JQuery\" />
   </ItemGroup>

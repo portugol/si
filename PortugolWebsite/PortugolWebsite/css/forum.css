@@ -47,7 +47,7 @@ a.listItemLink:hover {
     text-decoration: underline;
 }
 
-
+    
 a.menuitem {
         font-weight: bold;
         text-decoration: none;
@@ -120,25 +120,3 @@ tr.bglight, td.bglight, td.bglightextra {
 tr.bgdark, td.bgdark, td.bgdarkextra {
         background-color: #dddddd;
 }
-/*
-.nav:link { font-family: arial, helvetica, sans-serif; font-weight: bold; font-size: 10pt; color: #666698; text-decoration: none; background: transparent }
-.nav:visited { font-family: arial, helvetica, sans-serif; font-weight: bold; font-size: 10pt; color: #666698; text-decoration: none; background: transparent }
-.nav:active { font-family: arial, helvetica, sans-serif; font-weight: bold; font-size: 10pt; color: #000000; text-decoration: none; background: transparent }
-.nav:hover { font-family: arial, helvetica, sans-serif; font-weight: bold; font-size: 10pt; color: #000000; text-decoration: none; background: transparent }
-
-.navoff { font-family: arial, helvetica, sans-serif; font-weight: bold; font-size: 10pt; color: #000000; text-decoration: none; background: transparent }
-
-td.navtd { font-family: arial, helvetica, sans-serif; font-size: 10pt; text-align: left;}
-
-a.footerLink {
-    color: #0D2888;
-    text-decoration: none;
-    font-size: 10px;
-}
-
-a.footerLink:hover {
-    color: #000000;
-    text-decoration: underline;
-    font-size: 10px;
-}
-    */

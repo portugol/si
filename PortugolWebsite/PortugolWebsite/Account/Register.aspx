@@ -51,5 +51,6 @@
                     <input type="password" id="Password1" class="required" />
                     <em>Introduza novamente a sua senha de identificação.</em>
                 </p>
+                <asp:Button Text="Registar" runat="server" />
     </div>
 </asp:Content>

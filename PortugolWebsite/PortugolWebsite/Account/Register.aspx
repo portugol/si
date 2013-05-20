@@ -11,8 +11,45 @@
         <br />
         <br />
         <h2 class="register-to">&nbsp; <asp:Literal ID="Literal11" Text="Registar" runat="server"></asp:Literal></h2>
-        <asp:Literal ID="name" Text="Nome*:" runat="server"></asp:Literal>
-        <asp:Literal ID="username" Text="Username*:" runat="server"></asp:Literal>
-        <asp:Literal ID="password" Text="Password*:" runat="server"></asp:Literal>
+                  <p>
+                    <label for="full-name">
+                        "Nome Completo: "
+                        <span class="requiredField">*</span>
+                    </label>
+                    <input type="text" id="full-name" class="required" />
+                    <em>Introduza o seu nome completo.</em>
+                </p>      
+                 <p>
+                    <label for="full-name">
+                        "Username: "
+                        <span class="requiredField">*</span>
+                    </label>
+                    <input type="text" id="Text1" class="required" />
+                    <em>Introduza o seu username.</em>
+                </p>      
+                <p>
+                    <label for="full-name">
+                        "Email: "
+                        <span class="requiredField">*</span>
+                    </label>
+                    <input type="text" id="Text2" class="required" />
+                    <em>Introduza o seu endereço de correio electrónico.</em>
+                </p>
+                <p>
+                    <label for="full-name">
+                        "Password: "
+                        <span class="requiredField">*</span>
+                    </label>
+                    <input type="password" id="Text3" class="required" />
+                    <em>Introduza a sua senha de identificação.</em>
+                </p>
+                <p>
+                    <label for="full-name">
+                        "Confirmar Password: "
+                        <span class="requiredField">*</span>
+                    </label>
+                    <input type="password" id="Password1" class="required" />
+                    <em>Introduza novamente a sua senha de identificação.</em>
+                </p>
     </div>
 </asp:Content>

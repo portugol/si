@@ -120,7 +120,7 @@ tr.bglight, td.bglight, td.bglightextra {
 tr.bgdark, td.bgdark, td.bgdarkextra {
         background-color: #dddddd;
 }
-
+/*
 .nav:link { font-family: arial, helvetica, sans-serif; font-weight: bold; font-size: 10pt; color: #666698; text-decoration: none; background: transparent }
 .nav:visited { font-family: arial, helvetica, sans-serif; font-weight: bold; font-size: 10pt; color: #666698; text-decoration: none; background: transparent }
 .nav:active { font-family: arial, helvetica, sans-serif; font-weight: bold; font-size: 10pt; color: #000000; text-decoration: none; background: transparent }
@@ -141,3 +141,4 @@ a.footerLink:hover {
     text-decoration: underline;
     font-size: 10px;
 }
+    */

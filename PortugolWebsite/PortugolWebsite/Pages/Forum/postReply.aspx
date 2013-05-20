@@ -25,14 +25,14 @@
 	<table border="0" cellspacing="0" cellpadding="4">
 	<tr>
 		<td class="requiredField">Subject: 
-            <asp:RequiredFieldValidator id="reqSubject" ControlToValidate="psSubject" ErrorMessage="The Subject Field is required." display="static" runat="server">*</asp:RequiredFieldValidator></td>
+            <asp:RequiredFieldValidator id="reqSubject" ControlToValidate="txtSubject" ErrorMessage="The Subject Field is required." display="static" runat="server">*</asp:RequiredFieldValidator></td>
 		<td class="requiredField">
             <asp:TextBox id="txtSubject" Width="500px" maxlength="255" runat="server"/>
 		</td>
 	</tr>
 	<tr>
 		<td class="requiredField" valign="top">Post: 
-            <asp:RequiredFieldValidator id="reqPost" ControlToValidate="psPost" ErrorMessage="The Post Field is required." display="static" runat="server">*</asp:RequiredFieldValidator>
+            <asp:RequiredFieldValidator id="reqPost" ControlToValidate="txtPost" ErrorMessage="The Post Field is required." display="static" runat="server">*</asp:RequiredFieldValidator>
 		</td>
 		<td class="requiredField">
             <asp:TextBox TextMode="MultiLine" id="txtPost"  Width="500px" Height="300px" MaxLength="1000" runat="server"/>

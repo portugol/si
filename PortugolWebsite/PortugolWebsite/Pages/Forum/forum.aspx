@@ -1,6 +1,6 @@
 ﻿<%@ Page Title="" Language="C#" MasterPageFile="~/PortugolWebSite.Master" AutoEventWireup="true" CodeBehind="forum.aspx.cs" Inherits="PortugolWebsite.Pages.Forum.forum" %>
 <asp:Content ID="HeadContent" ContentPlaceHolderID="ContentHead" runat="server">
-        <link rel="stylesheet" href="../../css/client.css" />
+        <link rel="stylesheet" href="../../css/forum.css" />
 </asp:Content>
 <asp:Content ID="ContentMain" ContentPlaceHolderID="MainContent" runat="server">    
 

@@ -8,19 +8,19 @@
         <div class="div-table-row">
             <div class="div-table-col" >
 				<a href="calculo.html">
-					<img src="../../imagens/calculo 91.jpg" style="position:relative; height:150px; width:250px" />
+					<img src="/img/calculo 91.jpg" style="position:relative; height:150px; width:250px" />
 				</a>
 				<p>Cálculo</p>
 			</div>
             <div class="div-table-col">
 				<a href="#">
-					<img src="../../imagens/decisão 9.jpg" style="position:relative; height:150px; width:250px" />
+					<img src="/img/decisão 9.jpg" style="position:relative; height:150px; width:250px" />
 				</a>
 				<p>Decisão</p>
 			</div>
             <div class="div-table-col">
 				<a href="#">
-					<img src="../../imagens/repetição 1.jpg" style="position:relative; height:150px; width:250px" />
+					<img src="/img/repetição 1.jpg" style="position:relative; height:150px; width:250px" />
 				</a>
 				<p>Repetição</p>
 			</div>
@@ -30,13 +30,13 @@
         <div class="div-table-row">
             <div class="div-table-col">
 				<a href="#">
-					<img src="../../imagens/arrays 5.jpg" style="position:relative; height:150px; width:250px" />
+					<img src="/img/arrays 5.jpg" style="position:relative; height:150px; width:250px" />
 				</a>
 				<p>Arrays</p>
 			</div>
             <div class="div-table-col">
 				<a href="#">
-					<img src="../../imagens/funcoes 3.jpg" style="position:relative; height:150px; width:250px" />
+					<img src="/img/funcoes 3.jpg" style="position:relative; height:150px; width:250px" />
 				</a>
 				<p>Funções</p>
 			</div>

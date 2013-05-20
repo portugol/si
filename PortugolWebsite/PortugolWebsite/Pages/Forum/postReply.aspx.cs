@@ -73,7 +73,7 @@ namespace PortugolWebsite.Pages.Forum
             int topic_Id = Convert.ToInt32(hiddenTopicId.Value);
             string subject = txtSubject.Text.Trim();
             string post = txtPost.Text.Trim();
-            int utilizador_id = Convert.ToInt32(Session["user_id"]);
+            int utilizador_id = 3; //TODO: Descomentar esta linha depois de implementada a segurança Convert.ToInt32(Session["user_id"]);
 
             if (BusinessForum.InsertThread(topic_Id, subject, post, utilizador_id))
             {

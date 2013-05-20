@@ -107,7 +107,7 @@
     <Content Include="Account\UpdateProfileSuccess.aspx" />
     <Content Include="calculo.html" />
     <Content Include="css\allcss.css" />
-    <Content Include="css\client.css" />
+    <Content Include="css\forum.css" />
     <Content Include="css\IdeStyle.css" />
     <Content Include="DLL\Microsoft.Practices.EnterpriseLibrary.Caching.Database.dll" />
     <Content Include="DLL\Microsoft.Practices.EnterpriseLibrary.Caching.dll" />

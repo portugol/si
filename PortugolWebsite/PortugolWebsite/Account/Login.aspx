@@ -2,7 +2,7 @@
 
 <asp:Content ID="HeadContent" ContentPlaceHolderID="ContentHead" runat="server">
     <meta charset="utf-8" />
-    <title>Login Portugol</title>
+    <title>Entrar</title>
     <script async="" src="http://connect.facebook.net/en_US/all.js"></script>
     <link href="http://fonts.googleapis.com/css?family=Lobster" media="screen" rel="stylesheet" type="text/css" />
     <link href="css/login.css" media="screen" rel="stylesheet" type="text/css" />

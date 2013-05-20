@@ -1,8 +1,9 @@
 <%@ Master Language="C#" AutoEventWireup="true" Inherits="MasterPage" MasterPageFile="~/PortugolWebSite.Master" Codebehind="MasterPage.master.cs" %>
+<%@ MasterType VirtualPath="~/PortugolWebSite.Master" %>
 
 <asp:Content ID="HeadContent" ContentPlaceHolderID="ContentHead" runat="server">
    
-    <link href="Style/StyleMaster.css" rel="stylesheet" type="text/css" />
+    
     <script type="text/javascript">
 
         function start() {
@@ -25,84 +26,26 @@
     </script>
 </asp:Content>
 <asp:Content ID="ContentMain" ContentPlaceHolderID="MainContent" runat="server">
-    <div>
+
+    <div style="padding-top:40px; text-align:left; ">
         <a href="MasterPage.master"></a>
         <br />
-        
-        <table id="tabela" style="background-color: White; border:medium groove #356BB3; border-radius:10px;" align="center" cellspacing="0" cellpadding="0  ">
+
+        <table id="tabela" style="width:96%; background-color:White; border:medium groove #356BB3; border-radius:10px; margin-left:2%;  text-align:center">
+
             <tr>
-                <td width="15">
-                    &nbsp;
-                </td>
-                <td colspan="2">
-                    &nbsp;
-                    <br />
-                </td>
-                <td width="15">
-                    &nbsp;
+                <td id="td_top_centro" align="right" style="background-color:#356BB3; color:white;" >
+                    <div id="clock" align="right"></div>
                 </td>
             </tr>
+
             <tr>
-                <td width="15">
-                    &nbsp;
-                </td>
-                <td colspan="2" id="td_top_centro" align="right">
-                    <div id="clock" align="right">
-                    </div>
-                </td>
-                <td width="15">
-                    &nbsp;
-                </td>
-            </tr>
-            <tr>
-                <td width="15">
-                    &nbsp;
-                </td>
-                <td colspan="2" id="td_top_centro1">
-                    &nbsp;</td>
-                <td width="15">
-                    &nbsp;
-                </td>
-            </tr>
-            <tr>
-                <td width="15" height="285px">
-                    &nbsp;
-                </td>
-                <td valign="top" id="td_menu">
-                    &nbsp;
-                    <br />
-                    <br />
-                    <br />                 
-                </td>
-                <td width="776" align="left" valign="top" style="text-align: center">
+                <td style="text-align: left">
                     <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
                     </asp:ContentPlaceHolder>
                 </td>
-                <td width="15">
-                    &nbsp;
-                </td>
             </tr>
-            <tr>
-                <td width="15">
-                    &nbsp;
-                </td>
-                <td colspan="2" align="center" width="15">
-                    <td width="15">
-                        &nbsp;
-                    </td>
-                
-            </tr>
-            <tr>
-                <td width="15">
-                    &nbsp;
-                </td>
-                <td colspan="2">
-                    &nbsp;
-                </td>
-                <td width="15">
-                    &nbsp;
-                </td>
-            </tr>
+
         </table>
     </div>
         <script type="text/javascript">

@@ -13,7 +13,8 @@ public partial class MasterPage : System.Web.UI.MasterPage
 {
     protected void Page_Load(object sender, EventArgs e)
     {
-       
+        //Alterar o label título "lblMainTitle" da Masterpage
+        Master.mainTitle = Resources.InfoMessages.titleBackoffice;
     }
     protected void Menu1_MenuItemClick(object sender, MenuEventArgs e)
     {

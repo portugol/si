@@ -50,7 +50,7 @@
                     <li><a href="/Pages/Tutoriais.aspx">Tutoriais</a></li>
                     <li><a href="/Pages/Ide.aspx">IDE</a></li>
                     <li><a href="/Pages/Forum/forum.aspx">Fórum</a></li>
-                    <li><a href="#">BackOffice</a></li>
+                    <li><a href="/Pages/BackOffice/Default.aspx">BackOffice</a></li>
                     <li><a href="#">Opção 6</a></li>                              
                     <li><a href="#">Opção 7</a></li>
 				    <!-- RODAPÉ DA BARRA LATERAL -->

@@ -117,7 +117,6 @@
     <Content Include="css\allcss.css" />
     <Content Include="css\forum.css" />
     <Content Include="css\IdeStyle.css" />
-    <Content Include="css\StyleMaster.css" />
     <Content Include="DLL\AjaxControlToolkit.dll" />
     <Content Include="DLL\Microsoft.Practices.EnterpriseLibrary.Caching.Database.dll" />
     <Content Include="DLL\Microsoft.Practices.EnterpriseLibrary.Caching.dll" />

@@ -7459,10 +7459,11 @@ div.st-tabs-horizontal {
         position: relative;
         z-index: 100;
         width: 100%!important;
-        
-        margin-bottom: -1px;
+        text-align:center;
+        margin-bottom: 1px;
         overflow: hidden;
 		background-color:#EEEEEE;
+        padding: 10px;
     }
 
     div.st-tabs-horizontal div.st-slide-container {

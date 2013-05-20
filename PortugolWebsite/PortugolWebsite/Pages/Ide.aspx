@@ -1,4 +1,6 @@
 ﻿<%@ Page Title="" Language="C#" MasterPageFile="~/PortugolWebSite.Master" AutoEventWireup="true" CodeBehind="Ide.aspx.cs" Inherits="PortugolWebsite.Pages.Frontoffice.Ide" %>
+<%@ MasterType VirtualPath="~/PortugolWebSite.Master" %>
+
 <asp:Content ID="HeadContent" ContentPlaceHolderID="ContentHead" runat="server">
     
     <meta charset="utf-8" />
@@ -16,6 +18,7 @@
 
 </asp:Content>
 <asp:Content ID="ContentMain" ContentPlaceHolderID="MainContent" runat="server">
+    <br /><br />
 
 		<div id="pallete">
 			<a id="btninicio">Inicio</a><br />

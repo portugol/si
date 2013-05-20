@@ -77,5 +77,41 @@ namespace Resources {
                 return ResourceManager.GetString("noRecordFound", resourceCulture);
             }
         }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Back Office.
+        /// </summary>
+        internal static string titleBackoffice {
+            get {
+                return ResourceManager.GetString("titleBackoffice", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Fórum.
+        /// </summary>
+        internal static string titleForum {
+            get {
+                return ResourceManager.GetString("titleForum", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Portugol IDE.
+        /// </summary>
+        internal static string titleIde {
+            get {
+                return ResourceManager.GetString("titleIde", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Tutoriais.
+        /// </summary>
+        internal static string titleTutorials {
+            get {
+                return ResourceManager.GetString("titleTutorials", resourceCulture);
+            }
+        }
     }
 }

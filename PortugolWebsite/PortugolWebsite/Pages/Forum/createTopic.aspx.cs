@@ -7,7 +7,8 @@ namespace PortugolWebsite.Pages.Forum
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-
+            //Alterar o label título "lblMainTitle" da Masterpage
+            Master.mainTitle = Resources.InfoMessages.titleForum;
         }
 
        

@@ -1,4 +1,6 @@
 ﻿<%@ Page Title="" Language="C#" MasterPageFile="~/PortugolWebSite.Master" AutoEventWireup="true" CodeBehind="threadView.aspx.cs" Inherits="PortugolWebsite.Pages.Forum.threadView" %>
+<%@ MasterType VirtualPath="~/PortugolWebSite.Master" %>
+
 <asp:Content ID="HeadContent" ContentPlaceHolderID="ContentHead" runat="server">
         <link rel="stylesheet" href="../../css/client.css" />
 </asp:Content>

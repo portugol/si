@@ -1,9 +1,11 @@
 ﻿<%@ Page Title="" Language="C#" MasterPageFile="~/PortugolWebSite.Master" AutoEventWireup="true" CodeBehind="Tutoriais.aspx.cs" Inherits="PortugolWebsite.Pages.Frontoffice.Tutoriais" %>
+<%@ MasterType VirtualPath="~/PortugolWebSite.Master" %>
+
 <asp:Content ID="HeadContent" ContentPlaceHolderID="ContentHead" runat="server">
 
 </asp:Content>
 <asp:Content ID="ContentMain" ContentPlaceHolderID="MainContent" runat="server">
-
+    <br /><br />
 	<div class="div-table">
         <div class="div-table-row">
             <div class="div-table-col" >

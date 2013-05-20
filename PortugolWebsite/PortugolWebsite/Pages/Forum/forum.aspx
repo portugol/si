@@ -1,4 +1,6 @@
 ﻿<%@ Page Title="" Language="C#" MasterPageFile="~/PortugolWebSite.Master" AutoEventWireup="true" CodeBehind="forum.aspx.cs" Inherits="PortugolWebsite.Pages.Forum.forum" %>
+<%@ MasterType VirtualPath="~/PortugolWebSite.Master" %>
+
 <asp:Content ID="HeadContent" ContentPlaceHolderID="ContentHead" runat="server">
         <link rel="stylesheet" href="../../css/forum.css" />
 </asp:Content>

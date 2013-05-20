@@ -340,6 +340,7 @@
     </None>
   </ItemGroup>
   <ItemGroup>
+    <Folder Include="Pages\BackOffice\" />
     <Folder Include="Scripts\Javascript\" />
     <Folder Include="Scripts\JQuery\" />
   </ItemGroup>

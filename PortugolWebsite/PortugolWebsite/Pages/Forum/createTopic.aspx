@@ -1,4 +1,6 @@
 ﻿<%@ Page Title="" Language="C#" MasterPageFile="~/PortugolWebSite.Master" AutoEventWireup="true" CodeBehind="createTopic.aspx.cs" Inherits="PortugolWebsite.Pages.Forum.createTopic" %>
+<%@ MasterType VirtualPath="~/PortugolWebSite.Master" %>
+
 <asp:Content ID="Content1" ContentPlaceHolderID="ContentHead" runat="server">
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="MainContent" runat="server">

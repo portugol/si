@@ -11,5 +11,17 @@ namespace PortugolWebsite.Pages.Frontoffice {
     
     
     public partial class Ide {
+        
+        /// <summary>
+        /// Master property.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated property.
+        /// </remarks>
+        public new PortugolWebsite.PortugolWebSite Master {
+            get {
+                return ((PortugolWebsite.PortugolWebSite)(base.Master));
+            }
+        }
     }
 }

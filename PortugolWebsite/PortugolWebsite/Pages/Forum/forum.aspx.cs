@@ -10,6 +10,8 @@ namespace PortugolWebsite.Pages.Forum
     {
         protected void Page_Load(object sender, EventArgs e)
         {
+            Master.mainTitle = Resources.InfoMessages.titleForum;
+
             if (!Page.IsPostBack)
                 LoadForumGrid();
         }

@@ -1,9 +1,6 @@
 ﻿using PortugolWebsite.Code.BLL;
 using System;
-using System.Collections.Generic;
 using System.Data;
-using System.Linq;
-using System.Web;
 using System.Web.UI;
 using System.Web.UI.WebControls;
 
@@ -13,6 +10,8 @@ namespace PortugolWebsite.Pages.Forum
     {
         protected void Page_Load(object sender, EventArgs e)
         {
+            Master.mainTitle = Resources.InfoMessages.titleForum;
+
             if (!Page.IsPostBack)
             {
                 if (!string.IsNullOrEmpty(Request.QueryString["TopicId"])) 

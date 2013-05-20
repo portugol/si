@@ -123,4 +123,16 @@
   <data name="noRecordFound" xml:space="preserve">
     <value>Não existem dados a serem apresentados.</value>
   </data>
+  <data name="titleBackoffice" xml:space="preserve">
+    <value>Back Office</value>
+  </data>
+  <data name="titleForum" xml:space="preserve">
+    <value>Fórum</value>
+  </data>
+  <data name="titleIde" xml:space="preserve">
+    <value>Portugol IDE</value>
+  </data>
+  <data name="titleTutorials" xml:space="preserve">
+    <value>Tutoriais</value>
+  </data>
 </root>

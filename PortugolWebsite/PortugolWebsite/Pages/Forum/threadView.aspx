@@ -11,7 +11,6 @@
 	<tr>
 		<td>
 			<a class="menuitem" href="forum.aspx">Forum Topics</a> &#062;
-			<b><asp:label runat="server" id="topThreadSubject" /></b> &#062;
             <asp:HyperLink ID="hyperLinkPostReply" NavigateUrl="#" Text="Post a Reply to this Thread" runat="server"></asp:HyperLink>
 		</td>
 	</tr>

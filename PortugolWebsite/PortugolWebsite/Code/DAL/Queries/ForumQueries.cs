@@ -48,7 +48,33 @@ namespace PortugolWebsite.Code.DAL.Queries
             return strQuery.ToString();
         }
 
+        public static string InsertThread(int topic_Id, string subject, string post, int utilizador_id)
+        {
+
+            StringBuilder strQuery = new StringBuilder();
+
+            strQuery.Append(" INSERT INTO forumThreads (RelTopId, Subject, Post, Date, LastUpdate, UtilizadoresId)");
+            strQuery.Append(" VALUES(" + topic_Id.ToString() + ", '" + subject + "', '" + post + "', '" + System.DateTime.Now.ToString("yyyy/MM/dd HH:mm:ss") + "', '" + System.DateTime.Now.ToString("yyyy/MM/dd HH:mm:ss") + "', " + utilizador_id .ToString() + " ) ");
+
+            return strQuery.ToString();
+        }
+
+        public static string UpdateThread(int thread_id, string subject, string post) 
+        {
+
+            StringBuilder strQuery = new StringBuilder();
+
+            strQuery.Append(" UPDATE forumThreads SET ");
+            strQuery.Append(" Subject = ''" + subject + "', ");
+            strQuery.Append(" Post = '" + post + "', " );
+            strQuery.Append(" LastUpdate = '" + System.DateTime.Now.ToString("yyyy/MM/dd HH:mm:ss") + "'");
+            strQuery.Append(" WHERE Id = " + thread_id.ToString());
+            
+
+            return strQuery.ToString();
+
         
+        }
 
 
     }

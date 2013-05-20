@@ -17,7 +17,8 @@ namespace PortugolWebsite
 
         protected void Session_Start(object sender, EventArgs e)
         {
-
+            Session["username"] = null;
+            Session["user_id"] = null;
         }
 
         protected void Application_BeginRequest(object sender, EventArgs e)

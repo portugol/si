@@ -24,7 +24,7 @@
             <div class="cell neutral email-signin">
                 <h4><asp:Literal ID="Literal5" Text="Preencha os campos em baixo..." runat="server"></asp:Literal></h4>
                 <span class="or module"><asp:Literal ID="Literal6" Text="OU" runat="server"></asp:Literal></span>
-                <asp:Login ID="Login1"  runat="server">
+                <asp:Login ID="LoginControl"  onloggedin="setUserInfo"  runat="server">
                     <LayoutTemplate>
                         <div style="margin: 0; padding: 0; display: inline">
                     

@@ -241,6 +241,7 @@
       <DependentUpon>SuccessMessages.resx</DependentUpon>
     </Compile>
     <Compile Include="Code\BLL\BusinessForum.cs" />
+    <Compile Include="Code\BLL\BusinessUser.cs" />
     <Compile Include="Code\CustomMembership\CustomMembershipProvider.cs" />
     <Compile Include="Code\CustomMembership\CustomMembershipRole.cs" />
     <Compile Include="Code\CustomMembership\CustomMembershipUser.cs" />

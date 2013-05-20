@@ -1,9 +1,6 @@
 ﻿using PortugolWebsite.Code.DAL;
 using System;
-using System.Collections.Generic;
 using System.Data;
-using System.Linq;
-using System.Web;
 
 namespace PortugolWebsite.Code.BLL
 {
@@ -88,5 +85,70 @@ namespace PortugolWebsite.Code.BLL
                 return null;
             }
         }
+
+        public static bool InsertThread(int topic_Id, string subject, string post, int utilizador_id)
+        {
+
+            try
+            {
+                int affectedRows = ForumDataAccess.InsertThread(topic_Id, subject, post, utilizador_id);
+                if (affectedRows > 0)
+                    return true;
+                else
+                    return false;
+
+            }
+            catch (DataException)
+            {//Apanhar excepção de ACESSO à base de dados
+
+                //Devolver objecto nulo
+                return false;
+            }
+            catch (System.Data.SqlClient.SqlException)
+            {//Apanhar excepção de erro no SERVIDOR da base de dados
+              
+                //Devolver objecto nulo
+                return false;
+            }
+            catch (Exception)
+            {//Apanhar excepção da própria applicação
+
+                //Devolver objecto nulo
+                return false;
+            }
+        }
+
+        public static bool UpdateThread(int thread_Id, string subject, string post)
+        {
+
+            try
+            {
+                int affectedRows = ForumDataAccess.UpdateThread(thread_Id, subject, post);
+                if (affectedRows > 0)
+                    return true;
+                else
+                    return false;
+
+            }
+            catch (DataException)
+            {//Apanhar excepção de ACESSO à base de dados
+
+                //Devolver objecto nulo
+                return false;
+            }
+            catch (System.Data.SqlClient.SqlException)
+            {//Apanhar excepção de erro no SERVIDOR da base de dados
+
+                //Devolver objecto nulo
+                return false;
+            }
+            catch (Exception)
+            {//Apanhar excepção da própria applicação
+
+                //Devolver objecto nulo
+                return false;
+            }
+        }
+
     }
 }

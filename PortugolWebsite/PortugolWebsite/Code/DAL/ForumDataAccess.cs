@@ -40,6 +40,22 @@ namespace PortugolWebsite.Code.DAL
 
         }
 
+        public static int InsertThread(int topic_Id, string subject, string post, int utilizador_id)
+        {
+            //Obter o comando SQL
+            string sqlQuery = ForumQueries.InsertThread(topic_Id, subject, post, utilizador_id);
+            //Executar o comando e devolver o número de registos afectados pela operação
+            return DataAccessLayer.ExecuteNonQuery(sqlQuery);
+        }
+
+        public static int UpdateThread(int thread_id, string subject, string post)
+        {
+            //Obter o comando SQL
+            string sqlQuery = ForumQueries.UpdateThread(thread_id, subject, post);
+            //Executar o comando e devolver o número de registos afectados pela operação
+            return DataAccessLayer.ExecuteNonQuery(sqlQuery);
+        }
+
         #endregion
     }
 }

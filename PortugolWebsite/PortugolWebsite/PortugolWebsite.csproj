@@ -154,6 +154,7 @@
     <Content Include="javascript_IDE\nodev.js" />
     <Content Include="javascript_IDE\raphael-min.js" />
     <Content Include="login.html" />
+    <Content Include="Pages\Forum\createTopic.aspx" />
     <Content Include="Pages\Forum\forum.aspx" />
     <Content Include="Pages\Forum\postReply.aspx" />
     <Content Include="Pages\Forum\threadView.aspx" />
@@ -264,6 +265,13 @@
     </Compile>
     <Compile Include="Index.aspx.designer.cs">
       <DependentUpon>Index.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\Forum\createTopic.aspx.cs">
+      <DependentUpon>createTopic.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Pages\Forum\createTopic.aspx.designer.cs">
+      <DependentUpon>createTopic.aspx</DependentUpon>
     </Compile>
     <Compile Include="Pages\Forum\forum.aspx.cs">
       <DependentUpon>forum.aspx</DependentUpon>

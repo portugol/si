@@ -1,9 +1,5 @@
 ﻿using PortugolWebsite.Code.DAL.Queries;
-using System;
-using System.Collections.Generic;
 using System.Data;
-using System.Linq;
-using System.Web;
 
 namespace PortugolWebsite.Code.DAL
 {
@@ -38,6 +34,15 @@ namespace PortugolWebsite.Code.DAL
             //Devolver o resultado da query num objecto DataTable
             return DataAccessLayer.GetDataTable(sqlQuery);
 
+        }
+
+
+        public static int InsertTopic(string title, string description, int utilizador_id)
+        {
+            //Obter o comando SQL
+            string sqlQuery = ForumQueries.InsertTopic(title, description, utilizador_id);
+            //Executar o comando e devolver o número de registos afectados pela operação
+            return DataAccessLayer.ExecuteNonQuery(sqlQuery);
         }
 
         public static int InsertThread(int topic_Id, string subject, string post, int utilizador_id)

@@ -3,14 +3,25 @@
         <link rel="stylesheet" href="../../css/forum.css" />
 </asp:Content>
 <asp:Content ID="ContentMain" ContentPlaceHolderID="MainContent" runat="server">    
-
+    <br /><br />
 	<table border="0" cellpadding="0" cellspacing="0" width="100%">
 	<tr>
 		<td>
-			<b>Forum Topics</b>		
+			<a class="menuitem" href="forum.aspx">Forum Topics</a> &#062;
+            <asp:HyperLink ID="hyperLinkPostReply" NavigateUrl="~/Pages/Forum/createTopic.aspx" Text="Create a new topic" runat="server"></asp:HyperLink>
 		</td>
-		
-		<td height="15"></td>
+	</tr>
+	<tr>
+        
+		<td height="2"></td>
+	</tr>
+	<tr>
+		<td align="right" valign="top" nowrap>
+
+		</td>
+	</tr>
+	<tr>
+		<td height="4"></td>
 	</tr>
 	</table>
 

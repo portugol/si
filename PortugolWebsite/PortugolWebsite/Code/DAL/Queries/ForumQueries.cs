@@ -48,6 +48,17 @@ namespace PortugolWebsite.Code.DAL.Queries
             return strQuery.ToString();
         }
 
+        public static string InsertTopic(string title, string description, int utilizador_id)
+        {
+
+            StringBuilder strQuery = new StringBuilder();
+
+            strQuery.Append(" INSERT INTO forumTopics (Title, Description, UtilizadoresId)");
+            strQuery.Append(" VALUES('" + title + "', '" + description + "', " + utilizador_id.ToString() + " ) ");
+
+            return strQuery.ToString();
+        }
+
         public static string InsertThread(int topic_Id, string subject, string post, int utilizador_id)
         {
 
@@ -75,6 +86,9 @@ namespace PortugolWebsite.Code.DAL.Queries
 
         
         }
+
+        
+
 
 
     }

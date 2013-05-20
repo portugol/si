@@ -86,6 +86,38 @@ namespace PortugolWebsite.Code.BLL
             }
         }
 
+        public static bool InsertTopic(string title, string descritpion, int utilizador_id)
+        {
+
+            try
+            {
+                int affectedRows = ForumDataAccess.InsertTopic(title, descritpion, utilizador_id);
+                if (affectedRows > 0)
+                    return true;
+                else
+                    return false;
+
+            }
+            catch (DataException)
+            {//Apanhar excepção de ACESSO à base de dados
+
+                //Devolver objecto nulo
+                return false;
+            }
+            catch (System.Data.SqlClient.SqlException)
+            {//Apanhar excepção de erro no SERVIDOR da base de dados
+
+                //Devolver objecto nulo
+                return false;
+            }
+            catch (Exception)
+            {//Apanhar excepção da própria applicação
+
+                //Devolver objecto nulo
+                return false;
+            }
+        }
+
         public static bool InsertThread(int topic_Id, string subject, string post, int utilizador_id)
         {
 

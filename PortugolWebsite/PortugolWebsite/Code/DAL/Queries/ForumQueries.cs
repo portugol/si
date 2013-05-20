@@ -1,8 +1,5 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
 using System.Text;
-using System.Web;
 
 namespace PortugolWebsite.Code.DAL.Queries
 {
@@ -30,5 +27,29 @@ namespace PortugolWebsite.Code.DAL.Queries
 
             return strQuery.ToString();
         }
+
+        public static string SelectTopicThreads(int? topic_Id = null, string order = "Asc")
+        {
+            
+            StringBuilder strQuery = new StringBuilder();
+
+            strQuery.Append(" SELECT Title, Description, forumThreads.Id, RelTopId, Subject, Post, Date, RelBcId, LastUpdate, forumThreads.UtilizadoresId, Username ");
+            strQuery.Append(" FROM forumThreads inner join utilizadores on forumThreads.UtilizadoresId=utilizadores.Id ");
+            strQuery.Append("   inner join forumTopics on  forumThreads.RelTopId = forumTopics.Id");
+
+            strQuery.Append(" WHERE 1 = 1 ");
+
+            if (topic_Id != null)
+                strQuery.Append(" and forumTopics.Id = " + Convert.ToString(topic_Id));
+
+
+            strQuery.Append(" ORDER BY LastUpdate " + order);
+
+            return strQuery.ToString();
+        }
+
+        
+
+
     }
 }

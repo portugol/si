@@ -26,6 +26,20 @@ namespace PortugolWebsite.Code.DAL
 
         }
 
+        /// <summary>
+        /// Consulta a base de dados e devolve as threads dos tópicos do Forum
+        /// </summary>
+        /// <param name="topic_Id">Identificador único do tópico</param>
+        /// <returns>ADO.NET DataTable</returns>
+        public static DataTable GetTopicThreads(int? topic_Id = null, string order = "Asc")
+        {
+            //Obter o comando SQL
+            string sqlQuery = ForumQueries.SelectTopicThreads(topic_Id, order);
+            //Devolver o resultado da query num objecto DataTable
+            return DataAccessLayer.GetDataTable(sqlQuery);
+
+        }
+
         #endregion
     }
 }

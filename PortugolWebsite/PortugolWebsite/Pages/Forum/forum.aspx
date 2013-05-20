@@ -42,7 +42,7 @@
 		<ItemStyle CssClass="listColumnText" />
 		<ItemTemplate>
 			<b>
-                <a class="listItemLink" href="topicView.aspx?id=<%# DataBinder.Eval(Container.DataItem, "Id") %>">
+                <a class="listItemLink" href="threadView.aspx?TopicId=<%# DataBinder.Eval(Container.DataItem, "Id") %>">
 			    <%# DataBinder.Eval(Container.DataItem, "Title") %>
                 </a>
 			</b>

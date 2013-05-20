@@ -28,7 +28,7 @@ namespace PortugolWebsite.Code.DAL.Queries
             return strQuery.ToString();
         }
 
-        public static string SelectTopicThreads(int? topic_Id = null, string order = "Asc")
+        public static string SelectTopicThreads(int? topic_Id = null, string order = "Desc")
         {
             
             StringBuilder strQuery = new StringBuilder();

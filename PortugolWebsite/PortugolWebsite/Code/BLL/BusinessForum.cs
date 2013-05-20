@@ -46,7 +46,7 @@ namespace PortugolWebsite.Code.BLL
             }
         }
 
-        public static DataView GetTopicThreads(int? topic_Id = null, string order = "Asc")
+        public static DataView GetTopicThreads(int? topic_Id = null, string order = "Desc")
         {
 
             try

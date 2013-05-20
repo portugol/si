@@ -24,7 +24,7 @@ namespace PortugolWebsite.Pages.Forum
         }
 
 
-        private void LoadThreads(string order = "Asc")
+        private void LoadThreads(string order = "Desc")
         {
             if (!string.IsNullOrEmpty(hiddenTopicId.Value))
             {

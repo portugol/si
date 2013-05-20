@@ -8,9 +8,10 @@
     <asp:HiddenField ID="hiddenTopicId" runat="server" />
     <asp:HiddenField ID="hiddenRecordID" runat="server" />
 
-	<span id="messageCenter" EnableViewState="false" runat="server"/><p>
+	<span id="messageCenter" EnableViewState="false" runat="server"/>
 	
-	<p>
+      <br /><br />
+	
 	<table border="0" cellpadding="0" cellspacing="0" width="100%">
 	<tr>
 		<td>

@@ -107,6 +107,7 @@
     <Content Include="Account\UpdateProfileSuccess.aspx" />
     <Content Include="calculo.html" />
     <Content Include="css\allcss.css" />
+    <Content Include="css\client.css" />
     <Content Include="css\IdeStyle.css" />
     <Content Include="DLL\Microsoft.Practices.EnterpriseLibrary.Caching.Database.dll" />
     <Content Include="DLL\Microsoft.Practices.EnterpriseLibrary.Caching.dll" />
@@ -153,8 +154,8 @@
     <Content Include="javascript_IDE\nodev.js" />
     <Content Include="javascript_IDE\raphael-min.js" />
     <Content Include="login.html" />
+    <Content Include="Pages\Forum\forum.aspx" />
     <Content Include="Pages\Ide.aspx" />
-    <Content Include="Pages\Realizateste.aspx" />
     <Content Include="Pages\Teste.aspx" />
     <Content Include="Pages\Tutoriais.aspx" />
     <Content Include="php\css\application-ltr-a256b57024170c98ba019bc1c06cf31f.css" />
@@ -237,13 +238,15 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>SuccessMessages.resx</DependentUpon>
     </Compile>
-    <Compile Include="Code\BLL\BusinessCapitulo.cs" />
+    <Compile Include="Code\BLL\BusinessForum.cs" />
     <Compile Include="Code\CustomMembership\CustomMembershipProvider.cs" />
     <Compile Include="Code\CustomMembership\CustomMembershipRole.cs" />
     <Compile Include="Code\CustomMembership\CustomMembershipUser.cs" />
     <Compile Include="Code\DAL\CapituloDataAccess.cs" />
     <Compile Include="Code\DAL\DataAccessLayer.cs" />
+    <Compile Include="Code\DAL\ForumDataAccess.cs" />
     <Compile Include="Code\DAL\Queries\CapituloQueries.cs" />
+    <Compile Include="Code\DAL\Queries\ForumQueries.cs" />
     <Compile Include="Code\DAL\Queries\RoleQueries.cs" />
     <Compile Include="Code\DAL\Queries\UserQueries.cs" />
     <Compile Include="Code\DAL\RoleDataAccess.cs" />
@@ -259,19 +262,19 @@
     <Compile Include="Index.aspx.designer.cs">
       <DependentUpon>Index.aspx</DependentUpon>
     </Compile>
+    <Compile Include="Pages\Forum\forum.aspx.cs">
+      <DependentUpon>forum.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Pages\Forum\forum.aspx.designer.cs">
+      <DependentUpon>forum.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Pages\Ide.aspx.cs">
       <DependentUpon>Ide.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
     <Compile Include="Pages\Ide.aspx.designer.cs">
       <DependentUpon>Ide.aspx</DependentUpon>
-    </Compile>
-    <Compile Include="Pages\Realizateste.aspx.cs">
-      <DependentUpon>Realizateste.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="Pages\Realizateste.aspx.designer.cs">
-      <DependentUpon>Realizateste.aspx</DependentUpon>
     </Compile>
     <Compile Include="Pages\Teste.aspx.cs">
       <DependentUpon>Teste.aspx</DependentUpon>

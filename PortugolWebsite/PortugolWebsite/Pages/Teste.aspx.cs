@@ -19,7 +19,7 @@ namespace PortugolWebsite.Pages
 
         private void LoadCapitulo()
         {
-            DataView dataview = BusinessCapitulo.GetCapitulo();
+            //DataView dataview = BusinessCapitulo.GetCapitulo();
 
             //rbCapitulo.DataSource = dataview;
             //rbCapitulo.DataTextField = "Nome";

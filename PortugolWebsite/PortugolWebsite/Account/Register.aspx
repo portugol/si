@@ -55,5 +55,25 @@
         
         <br />
         <br />
+        
+    </div>
+    <div class="CleanForm">
+        <fieldset>
+            <p>
+                <label for="login-username">Nome Completo:</label>
+                <input type="text" id="register-fullname" name="register-fullname" value="" />
+            </p>
+            <p>
+                <label for="login-username">Username: *</label>
+                <input type="text" id="register-username" name="register-username" value="" />
+            </p>
+            <p>
+				<label for="email">Email: <span class="requiredField">*</span></label>
+				<input type="email" id="email" name="email" value="" required />
+				<em>Endereço de email válido. Ex.: name@portugol.com</em>
+			</p>
+
+        </fieldset>
+
     </div>
 </asp:Content>

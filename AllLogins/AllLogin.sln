@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 2012
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AllLogins", "AllLogins\AllLogins.csproj", "{68138684-A466-4214-83B4-D19BF237D8BA}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AllLogin", "AllLogins\AllLogin.csproj", "{68138684-A466-4214-83B4-D19BF237D8BA}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

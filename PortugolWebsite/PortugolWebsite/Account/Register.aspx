@@ -52,5 +52,8 @@
                     <em>Introduza novamente a sua senha de identificação.</em>
                 </p>
                 <asp:Button Text="Registar" runat="server" />
+        
+        <br />
+        <br />
     </div>
 </asp:Content>

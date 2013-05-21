@@ -461,3 +461,6 @@ body > .container {
 #user-registration-form .container, #user-session-form .container, body.user-profile-page .container, #badges-modal .container, body.curricula.apis .container, body.dashboard .container, body.composer .container, body.styleguide .container, body.groups .container, body.tags .container, body.registrations .container, body.embed .container, body.quizzes .container, .v2-scope .container, body.curricula .container, body.proposed_groups .container {
     width: 940px;
 }
+
+/*Register Layout*/
+

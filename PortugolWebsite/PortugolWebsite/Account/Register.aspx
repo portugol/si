@@ -1,16 +1,14 @@
 ﻿<%@ Page Title="" Language="C#" MasterPageFile="~/PortugolWebSite.Master" AutoEventWireup="true" CodeBehind="Register.aspx.cs" Inherits="PortugolWebsite.Account.Register" %>
 <asp:Content ID="Content1" ContentPlaceHolderID="ContentHead" runat="server">
-    <meta charset="utf-8" />
+    
     <title>Registar</title>
     <script async="" src="http://connect.facebook.net/en_US/all.js"></script>
     <link href="http://fonts.googleapis.com/css?family=Lobster" media="screen" rel="stylesheet" type="text/css" />
-    <link href="css/login.css" media="screen" rel="stylesheet" type="text/css" />
     <link href="css/register.css" media="screen" rel="stylesheet" type="text/css" />
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="MainContent" runat="server">
     <div class="content"> 
-        <br />
-        <br />              
+                         
         <h2 class="register-to">&nbsp; <asp:Literal ID="Literal11" Text="Registar" runat="server"></asp:Literal></h2>
     </div>
         <!-- Register Tab Content -->
@@ -29,7 +27,7 @@
 					<p>
 						<label for="username">Username: <span class="requiredField">*</span></label>
 						<input type="text" id="Text2" name="username" value="" />
-						<em>Caracteres compreendidos 3 a characters, letras ou numeros.</em>
+						<em>Caracteres compreendidos 3 a 12, letras ou numeros.</em>
 					</p>					
 
 					<p>
@@ -50,16 +48,10 @@
 					</p>	
 					
 					<input type="submit" value="Registar" />
-                    <br />
-                    <br />
-					<div class="formExtra">
+                  	<div class="formExtra">
 						<p><strong>Nota: </strong>Preencha obrigatoriamente os campos assinalados com (*).</p>
-					</div>				
-			
+					</div>
 			</div>
-		
-		</div> <!-- end signUp -->
-		
-				
-	</div> <!-- end pageContainer -->            
+		</div>
+	</div>
 </asp:Content>

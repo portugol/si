@@ -2,6 +2,8 @@
 /* Register Layout          */
 /****************************/
 
+
+
 /* ---------- General Styles ---------- */
 
 
@@ -12,6 +14,9 @@
 	clear: both;
 	height: 0;
 }
+
+* html .clearfix             { zoom: 1; } /* IE6 */
+*:first-child+html .clearfix { zoom: 1; } /* IE7 */
 
 em {
 	color: #808286;
@@ -34,7 +39,7 @@ div#FormContainer {
 	border-radius: 5px;
 }
 
-/* ---------- Register Styles ---------- */
+/* ---------- Registar ---------- */
 div#signUp{
 	padding: 50px 25px 30px 25px;
 	
@@ -95,11 +100,13 @@ input[type="submit"] {
 /*End Button Registar*/
 
 
-input[type="submit"]:hover {
-	background: #70d2fd; 
-	background: url("../img/submitButtonArrow.png") 88% center no-repeat, -moz-linear-gradient(top, #70d2fd, #3cb9f5);
-	background: url("../img/submitButtonArrow.png") 88% center no-repeat, -webkit-gradient(linear, 0 0, 0 100%, from(#70d2fd), to(#3cb9f5));
-}	
+	input[type="submit"]:hover {
+		background: #70d2fd; 
+		background: url("../img/submitButtonArrow.png") 88% center no-repeat, -moz-linear-gradient(top, #70d2fd, #3cb9f5);
+		background: url("../img/submitButtonArrow.png") 88% center no-repeat, -webkit-gradient(linear, 0 0, 0 100%, from(#70d2fd), to(#3cb9f5));
+	}
+
+	
 
 .cleanForm p label {
 	font-weight: bold;
@@ -113,7 +120,6 @@ input[type="submit"]:hover {
 	text-align: right;
 }
 
-.cleanForm p em { margin-top: 12px; }
 
 div.formExtra, div.distanceLeft input[type="checkbox"], input[type="submit"], em { margin-left: 145px; }
 

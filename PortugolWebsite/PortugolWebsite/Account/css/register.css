@@ -34,7 +34,7 @@ div#FormContainer {
 	border-radius: 5px;
 }
 
-/* ---------- Registar ---------- */
+/* ---------- Register Styles ---------- */
 div#signUp{
 	padding: 50px 25px 30px 25px;
 	
@@ -95,13 +95,11 @@ input[type="submit"] {
 /*End Button Registar*/
 
 
-	input[type="submit"]:hover {
-		background: #70d2fd; 
-		background: url("../img/submitButtonArrow.png") 88% center no-repeat, -moz-linear-gradient(top, #70d2fd, #3cb9f5);
-		background: url("../img/submitButtonArrow.png") 88% center no-repeat, -webkit-gradient(linear, 0 0, 0 100%, from(#70d2fd), to(#3cb9f5));
-	}
-
-	
+input[type="submit"]:hover {
+	background: #70d2fd; 
+	background: url("../img/submitButtonArrow.png") 88% center no-repeat, -moz-linear-gradient(top, #70d2fd, #3cb9f5);
+	background: url("../img/submitButtonArrow.png") 88% center no-repeat, -webkit-gradient(linear, 0 0, 0 100%, from(#70d2fd), to(#3cb9f5));
+}	
 
 .cleanForm p label {
 	font-weight: bold;

@@ -12,6 +12,7 @@
         <br />
         <br />              
         <h2 class="register-to">&nbsp; <asp:Literal ID="Literal11" Text="Registar" runat="server"></asp:Literal></h2>
+    </div>
         <!-- Register Tab Content -->
 	<div id="FormContainer">
 	
@@ -60,7 +61,5 @@
 		</div> <!-- end signUp -->
 		
 				
-	</div> <!-- end pageContainer -->        
-
-    </div>
+	</div> <!-- end pageContainer -->            
 </asp:Content>

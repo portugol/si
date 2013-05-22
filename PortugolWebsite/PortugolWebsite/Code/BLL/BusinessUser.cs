@@ -1,11 +1,11 @@
 ﻿using PortugolWebsite.Code.CustomMembership;
 using PortugolWebsite.Code.DAL;
 using System;
-using System.Collections.Generic;
 using System.Data;
-using System.Linq;
-using System.Web;
 using System.Web.Security;
+using PortugolWebsite.Code.Shared;
+using System.Web.Configuration;
+using System.Net.Configuration;
 
 namespace PortugolWebsite.Code.BLL
 {
@@ -66,7 +66,6 @@ namespace PortugolWebsite.Code.BLL
                 return null;
             }
         }
-
 
         /// <summary>
         /// Insert a user record into the data base
@@ -197,6 +196,90 @@ namespace PortugolWebsite.Code.BLL
         }
 
         /// <summary>
+        /// Generate an automatic new password and sends it to the users email address
+        /// </summary>
+        /// <param name="username">user to reset password</param>
+        /// <returns>true if password resets, false otherwise</returns>
+        public static bool ResetPassword(string username) 
+        {
+            try
+            {
+                CustomMembershipProvider mProvider = (CustomMembershipProvider)System.Web.Security.Membership.Providers["CustomMembershipProvider"];
+
+                DataView dataView = BusinessUser.GetUser(null, username);
+                DataRowView recordRow = dataView[0];
+                string userEmail = Convert.ToString(recordRow["Email"]);
+                
+                //Gerar nova password e alterá-la
+                string newPassword = mProvider.ResetPassword(username, null);
+                //TODO: Isto pode gerar erro de lógica, pois a password vai ser alterada na BD e só depois se envia mail... e se o envio do mail falhar?!
+
+                string message = Resources.InfoMessages.emailResetPasswordMessage;
+                string subject = Resources.InfoMessages.emailResetPasswordSubject;
+                string emailBody = String.Empty;
+
+                string originName = string.Empty;
+                string originEmail = string.Empty;
+                
+                //Ler o nome e o mail do rementete do appSettings no Web.Config.
+                System.Configuration.Configuration rootWebConfig1 = System.Web.Configuration.WebConfigurationManager.OpenWebConfiguration(null);
+                if (rootWebConfig1.AppSettings.Settings.Count > 0)
+                {
+                    //Ler o nome do remetente do appSettings no Web.Config.
+	                System.Configuration.KeyValueConfigurationElement emailApplicationName = rootWebConfig1.AppSettings.Settings["emailApplicationName"];
+	                if (emailApplicationName != null)
+                        originName = emailApplicationName.Value;
+	                else
+		                throw new Exception(Resources.ErrorMessages.appError);
+                    //Ler o email do remetente do appSettings no Web.Config.
+                    System.Configuration.KeyValueConfigurationElement emailApplicationAddress = rootWebConfig1.AppSettings.Settings["emailApplicationAddress"];
+	                if (emailApplicationAddress != null)
+                        originEmail = emailApplicationAddress.Value;
+	                else
+		                throw new Exception(Resources.ErrorMessages.appError);
+                }
+
+                //Verificar se o mail do destinatário e do remetente são válidos
+                if (SharedFunctions.isEmailValid(userEmail) && SharedFunctions.isEmailValid(originEmail))
+                {
+                    //Composição do corpo da mensagem, passa a incluir o nome e endereço e-mail de quem enviou a mensagem
+                    emailBody = SharedFunctions.ComposeEmailBody(username, userEmail, message);
+
+                    
+                    //Envio do email
+                    return SharedFunctions.SendEmail(originName, originEmail, username, userEmail, subject, emailBody);
+
+                }
+                else
+                {
+                    throw new Exception(Resources.ErrorMessages.invalidEmail);
+                }
+                
+
+            }
+            catch (DataException)
+            {//Apanhar excepção de ACESSO à base de dados
+
+                //Devolver erro
+                return false;
+            }
+            catch (System.Data.SqlClient.SqlException)
+            {//Apanhar excepção de erro no SERVIDOR da base de dados
+
+                //Devolver erro
+                return false;
+            }
+            catch (Exception)
+            {
+                //Apanhar excepção da própria applicação
+
+                //Devolver erro
+                return false;
+            }
+            
+        }
+
+        /// <summary>
         /// Set a user to an active state
         /// </summary>
         /// <param name="User_Id">user unique identifier</param>
@@ -269,5 +352,6 @@ namespace PortugolWebsite.Code.BLL
         }
 
 
+        
     }
 }

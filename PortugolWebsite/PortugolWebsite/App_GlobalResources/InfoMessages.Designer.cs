@@ -61,6 +61,24 @@ namespace Resources {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to A sua nova senha de identificação é.
+        /// </summary>
+        internal static string emailResetPasswordMessage {
+            get {
+                return ResourceManager.GetString("emailResetPasswordMessage", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Envio de nova senha de identificação.
+        /// </summary>
+        internal static string emailResetPasswordSubject {
+            get {
+                return ResourceManager.GetString("emailResetPasswordSubject", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Sem descrição.
         /// </summary>
         internal static string noDescription {

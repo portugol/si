@@ -1,18 +1,26 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Web;
-using System.Web.UI;
-using System.Web.UI.WebControls;
+﻿using PortugolWebsite.Code.BLL;
+using System;
 
 namespace PortugolWebsite.Account
 {
     public partial class RecoverPassword : System.Web.UI.Page
     {
+
         protected void Page_Load(object sender, EventArgs e)
         {
-            //TODO Soeiro - Nao é possivel fazer recover, tem que se fazer reset
 
+        }
+
+        protected void btnSubmit_Click(object sender, EventArgs e)
+        {
+            if (BusinessUser.ResetPassword(txtUsername.Text.Trim()))
+            {
+                //TODO: Apresentar mensagem de sucesso ao utilizador
+            }
+            else
+            {
+                //TODO: Apresentar mensagem de erro ao utilizador
+            }
         }
     }
 }

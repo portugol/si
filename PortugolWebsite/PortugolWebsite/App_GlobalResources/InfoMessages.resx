@@ -117,6 +117,12 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
+  <data name="emailResetPasswordMessage" xml:space="preserve">
+    <value>A sua nova senha de identificação é</value>
+  </data>
+  <data name="emailResetPasswordSubject" xml:space="preserve">
+    <value>Envio de nova senha de identificação</value>
+  </data>
   <data name="noDescription" xml:space="preserve">
     <value>Sem descrição</value>
   </data>

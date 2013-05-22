@@ -28,7 +28,7 @@
 
 					<p>
 						<label for="username">Username: <span class="requiredField">*</span></label>
-						<input type="text" id="Text2" name="username" pattern="^[a-z0-9_-]{3,20}$" value="" />
+						<input type="text" id="Text2" name="username" value="" />
 						<em>Caracteres compreendidos 3 a characters, letras ou numeros.</em>
 					</p>					
 

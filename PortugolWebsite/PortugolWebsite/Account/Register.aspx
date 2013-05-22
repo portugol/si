@@ -5,75 +5,62 @@
     <script async="" src="http://connect.facebook.net/en_US/all.js"></script>
     <link href="http://fonts.googleapis.com/css?family=Lobster" media="screen" rel="stylesheet" type="text/css" />
     <link href="css/login.css" media="screen" rel="stylesheet" type="text/css" />
+    <link href="css/register.css" media="screen" rel="stylesheet" type="text/css" />
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="MainContent" runat="server">
-    <div class="content">
+    <div class="content"> 
         <br />
-        <br />
+        <br />              
         <h2 class="register-to">&nbsp; <asp:Literal ID="Literal11" Text="Registar" runat="server"></asp:Literal></h2>
-                  <p>
-                    <label for="full-name">
-                        "Nome Completo: "
-                        <span class="requiredField">*</span>
-                    </label>
-                    <input type="text" id="full-name" class="required" />
-                    <em>Introduza o seu nome completo.</em>
-                </p>      
-                 <p>
-                    <label for="full-name">
-                        "Username: "
-                        <span class="requiredField">*</span>
-                    </label>
-                    <input type="text" id="Text1" class="required" />
-                    <em>Introduza o seu username.</em>
-                </p>      
-                <p>
-                    <label for="full-name">
-                        "Email: "
-                        <span class="requiredField">*</span>
-                    </label>
-                    <input type="text" id="Text2" class="required" />
-                    <em>Introduza o seu endereço de correio electrónico.</em>
-                </p>
-                <p>
-                    <label for="full-name">
-                        "Password: "
-                        <span class="requiredField">*</span>
-                    </label>
-                    <input type="password" id="Text3" class="required" />
-                    <em>Introduza a sua senha de identificação.</em>
-                </p>
-                <p>
-                    <label for="full-name">
-                        "Confirmar Password: "
-                        <span class="requiredField">*</span>
-                    </label>
-                    <input type="password" id="Password1" class="required" />
-                    <em>Introduza novamente a sua senha de identificação.</em>
-                </p>
-                <asp:Button Text="Registar" runat="server" />
-        
-        <br />
-        <br />
-        
-    </div>
-    <div class="CleanForm">
-        <fieldset>
-            <p>
-                <label for="login-username">Nome Completo:</label>
-                <input type="text" id="register-fullname" name="register-fullname" value="" />
-            </p>
-            <p>
-                <label for="login-username">Username: *</label>
-                <input type="text" id="register-username" name="register-username" value="" />
-            </p>
-            <p>
-				<label for="email">Email: <span class="requiredField">*</span></label>
-				<input type="email" id="email" name="email" value="" required />
-				<em>Endereço de email válido. Ex.: name@portugol.com</em>
-			</p>
+        <!-- Register Tab Content -->
+	<div id="FormContainer">
+	
+		
+		<div id="signUp" class="toggleTab"> <!-- signUp -->
+		
+			<div class="cleanForm" class="clearfix toggleTab">				
+					<p>
+						<label for="full-name">Nome Completo: <span class="requiredField">*</span></label>
+						<input type="text" id="Text1" name="full-name" value="" />
+						<em>Introduza o nome completo.</em>
+					</p>
 
-        </fieldset>
+					<p>
+						<label for="username">Username: <span class="requiredField">*</span></label>
+						<input type="text" id="Text2" name="username" pattern="^[a-z0-9_-]{3,20}$" value="" />
+						<em>Caracteres compreendidos 3 a characters, letras ou numeros.</em>
+					</p>					
+
+					<p>
+						<label for="email">Email : <span class="requiredField">*</span></label>
+						<input type="email" id="email1" name="email" value="" />
+						<em>Utilize o endereço de correio electrónico como. Exemplo.: aluno@portugol.com</em>
+					</p>		
+                
+                     <p>
+						<label for="password">Password: <span class="requiredField">*</span></label>
+						<input type="password" id="password1" name="password" value="" />
+						<em>Password compreendida 5 a 12 caracteres.</em>
+					</p>		
+                
+                    <p>
+						<label for="password">Confirmar Password: <span class="requiredField">*</span></label>
+						<input type="password" id="password2" name="password" value="" /> <em>&nbsp;Repita novamente a password que foi preenchida no campo anterior.</em>
+					</p>	
+					
+					<input type="submit" value="Registar" />
+                    <br />
+                    <br />
+					<div class="formExtra">
+						<p><strong>Nota: </strong>Preencha obrigatoriamente os campos assinalados com (*).</p>
+					</div>				
+			
+			</div>
+		
+		</div> <!-- end signUp -->
+		
+				
+	</div> <!-- end pageContainer -->        
 
     </div>
 </asp:Content>

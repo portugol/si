@@ -108,6 +108,7 @@
     <Content Include="Account\ChangePassword.aspx" />
     <Content Include="Account\css\login.css" />
     <Content Include="Account\css\register.css" />
+    <Content Include="Account\css\alterarPass.css" />
     <Content Include="Account\img\submitButtonArrow.png" />
     <Content Include="Account\Login.aspx" />
     <Content Include="Account\MyProfile.aspx" />

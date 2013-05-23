@@ -215,6 +215,7 @@
     <Content Include="Pages\BackOffice\Tipo_User\Inserir.aspx" />
     <Content Include="Pages\BackOffice\Tipo_User\Listar.aspx" />
     <Content Include="Pages\BackOffice\Utilizadores\Listar.aspx" />
+    <Content Include="Pages\Calculo.aspx" />
     <Content Include="Pages\Forum\createTopic.aspx" />
     <Content Include="Pages\Forum\forum.aspx" />
     <Content Include="Pages\Forum\postReply.aspx" />
@@ -604,6 +605,13 @@
     </Compile>
     <Compile Include="Pages\BackOffice\Utilizadores\Listar.aspx.designer.cs">
       <DependentUpon>Listar.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\Calculo.aspx.cs">
+      <DependentUpon>Calculo.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Pages\Calculo.aspx.designer.cs">
+      <DependentUpon>Calculo.aspx</DependentUpon>
     </Compile>
     <Compile Include="Pages\Forum\createTopic.aspx.cs">
       <DependentUpon>createTopic.aspx</DependentUpon>

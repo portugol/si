@@ -7,6 +7,19 @@
     <title>Portugol website</title>
 
     <link rel="stylesheet" href="css/allcss.css" />
+    
+    <%--    Style para o google translate--%>
+        <style type="text/css">
+            .goog-te-gadget-icon {display:none;}
+            .goog-te-gadget-simple a {text-decoration: none !important;}
+            .goog-te-banner-frame.skiptranslate {display: none !important;}
+            .goog-tooltip { display: none !important;}
+            .goog-tooltip:hover { display: none !important;}
+            .goog-text-highlight {  background-color: transparent !important;
+                                    border: none !important;
+                                    box-shadow: none !important;}
+            body { top: 0px !important;}
+        </style>
 
     <asp:ContentPlaceHolder ID="ContentHead" runat="server"></asp:ContentPlaceHolder>
 </head>
@@ -27,18 +40,24 @@
 								    <span class="icon-bar"></span>
                                     <span class="icon-bar"></span>
                                     <span class="icon-bar"></span>	
-                                    </button>
+                                </button>
 							    
                             </li>
                         </ul>
+                        
                         <a id="logo" class="brand" href="/Index.aspx" title="Página Inicial"></a>					    
-                            <button class="btn btn-inverse hidden-phone pull-right" type="button" onclick="location.href='Account/Register.aspx'">Registar-se</button>
+
+                        <button class="btn btn-inverse hidden-phone pull-right" type="button" onclick="location.href='Account/Register.aspx'">Registar</button>
 					    
 					    <ul class="nav pull-right" style="margin-right: 0;">
 						    <li>
 							    <a href="Account/Login.aspx" >Entrar</a>						  
 						    </li>
 					    </ul>
+                            
+                        <div id="google_translate_element" class="btn btn-inverse hidden-phone pull-right">
+                        </div>
+                        
 				    </div>
                 </div>
             </div>
@@ -80,7 +99,20 @@
 		    <div id="divWorkArea" class="WorkArea">
 			    <asp:ContentPlaceHolder ID="MainContent" runat="server"/>
 		    </div>
-        </div>   
+        </div> 
+        
+        <script type="text/javascript">
+            function googleTranslateElementInit() {
+                new google.translate.TranslateElement
+                (
+                    {
+                    pageLanguage: 'pt', layout: google.translate.TranslateElement.InlineLayout.SIMPLE
+                    },
+                    'google_translate_element'
+                );
+            }
+        </script>
+        <script src="http://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit" type="text/javascript"></script>  
     </form>
 </body>
 </html>

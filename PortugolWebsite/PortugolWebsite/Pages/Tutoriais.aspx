@@ -9,7 +9,7 @@
 	<div class="div-table">
         <div class="div-table-row">
             <div class="div-table-col" >
-				<a href="calculo.html">
+				<a href="Calculo.aspx">
 					<img src="logos/calculo.png" style="position:relative;" />
 				</a>
 				<p>Cálculo</p>

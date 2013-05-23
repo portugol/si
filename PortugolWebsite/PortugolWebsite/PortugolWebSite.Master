@@ -32,7 +32,9 @@
                             </li>
                         </ul>
                         <a id="logo" class="brand" href="/Index.aspx" title="Página Inicial"></a>
-					    <button class="btn btn-inverse hidden-phone pull-right">Registar-se</button>
+					    <a href="Account/Register.aspx">
+                            <button class="btn btn-inverse hidden-phone pull-right" type="button" onclick="location.href='Account/Register.aspx'">Registar-se</button>
+					    </a>
 					    <ul class="nav pull-right" style="margin-right: 0;">
 						    <li>
 							    <a href="Account/Login.aspx" >Entrar</a>						  

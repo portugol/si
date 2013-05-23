@@ -10,19 +10,19 @@
         <div class="div-table-row">
             <div class="div-table-col" >
 				<a href="calculo.html">
-					<img src="/img/calculo 91.jpg" style="position:relative; height:150px; width:250px" />
+					<img src="logos/calculo.png" style="position:relative;" />
 				</a>
 				<p>Cálculo</p>
 			</div>
             <div class="div-table-col">
 				<a href="#">
-					<img src="/img/decisão 9.jpg" style="position:relative; height:150px; width:250px" />
+					<img src="logos/decisao.png" style="position:relative;" />
 				</a>
 				<p>Decisão</p>
 			</div>
             <div class="div-table-col">
 				<a href="#">
-					<img src="/img/repetição 1.jpg" style="position:relative; height:150px; width:250px" />
+					<img src="logos/repitacao.png" style="position:relative;" />
 				</a>
 				<p>Repetição</p>
 			</div>
@@ -32,13 +32,13 @@
         <div class="div-table-row">
             <div class="div-table-col">
 				<a href="#">
-					<img src="/img/arrays 5.jpg" style="position:relative; height:150px; width:250px" />
+					<img src="logos/arrays.png" style="position:relative;" />
 				</a>
 				<p>Arrays</p>
 			</div>
             <div class="div-table-col">
 				<a href="#">
-					<img src="/img/funcoes 3.jpg" style="position:relative; height:150px; width:250px" />
+					<img src="logos/funcoes.png" style="position:relative;" />
 				</a>
 				<p>Funções</p>
 			</div>

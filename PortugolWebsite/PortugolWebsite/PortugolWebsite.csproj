@@ -241,6 +241,8 @@
     <Content Include="Scripts\Javascript_IDE\nodev.js" />
     <Content Include="Scripts\Javascript_IDE\raphael-min.js" />
     <Content Include="tutoriais.html" />
+    <Content Include="Videos\Calculo\Calculo.avi" />
+    <Content Include="Videos\Introducao.avi" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>

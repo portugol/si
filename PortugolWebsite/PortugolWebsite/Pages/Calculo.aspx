@@ -12,9 +12,9 @@
     <div style="width:100%; border: 1px solid blue; display:inline-block; ">
         <div style="float: left; border: 1px solid red; ">
             <ul>
-	            <li>Introdução</li>
+	            <li><a href="/Videos/Introducao.avi">Introdução</a></li>
                 <li><a href="javascript:openWin('emConstrucao.png')">Leitura de Dados</a></li>
-                <li><a href="javascript:openWin('emConstrucao.png')">Calculo</a></li>
+                <li><a href="/Videos/Calculo/Calculo.avi">Calculo</a></li>
                 <li><a href="javascript:openWin('emConstrucao.png')">Resto da Divisão</a></li>
                 <li><a href="javascript:openWin('emConstrucao.png')">Calculo com Reais</a></li>
                 <li><a href="javascript:openWin('emConstrucao.png')">Mix de Inteiros e Reais</a></li>
@@ -29,8 +29,15 @@
                 <li><a href="javascript:openWin('emConstrucao.png')">Exponêncial</a></li>
             </ul>
         </div>
-        <div style="position:absolute; float: left; border: 1px solid red; width:800px; margin-left:auto; margin-right:auto;">
-            VIDEO GOES HERE
+        <div style="float: left;">
+           
+             VIDEO GOES HERE
+            <%--<video width="320" height="240" controls>
+              <source src="../Videos/Introducao.avi" type="video/mp4" />
+                    Your browser does not support the video tag.
+            </video> --%>
+            Converter o video
+
         </div>
     </div>
 

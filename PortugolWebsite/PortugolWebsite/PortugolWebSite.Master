@@ -6,7 +6,8 @@
 <head runat="server">
     <title>Portugol website</title>
 
-    <link rel="stylesheet" href="css/allcss.css" />
+    <%--<link rel="stylesheet" href="css/allcss.css" />--%>
+    <link rel="stylesheet" href="css/cleanCss.css" />
     
     <%--    Style para o google translate--%>
         <style type="text/css">

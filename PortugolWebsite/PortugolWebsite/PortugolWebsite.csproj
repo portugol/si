@@ -118,6 +118,7 @@
     <Content Include="Account\UpdateProfileSuccess.aspx" />
     <Content Include="calculo.html" />
     <Content Include="css\allcss.css" />
+    <Content Include="css\cleanCss.css" />
     <Content Include="css\forum.css" />
     <Content Include="css\IdeStyle.css" />
     <Content Include="DLL\AjaxControlToolkit.dll" />

@@ -1,4 +1,5 @@
 ﻿<%@ Page Title="" Language="C#" MasterPageFile="~/PortugolWebSite.Master" AutoEventWireup="true" CodeBehind="Register.aspx.cs" Inherits="PortugolWebsite.Account.Register" %>
+<%@ MasterType VirtualPath="~/PortugolWebSite.Master" %>
 <asp:Content ID="Content1" ContentPlaceHolderID="ContentHead" runat="server">
     
     <title>Registar</title>

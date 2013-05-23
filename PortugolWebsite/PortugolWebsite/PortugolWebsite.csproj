@@ -674,6 +674,7 @@
     </None>
   </ItemGroup>
   <ItemGroup>
+    <Folder Include="Pages\logos\" />
     <Folder Include="Scripts\Javascript\" />
     <Folder Include="Scripts\JQuery\" />
   </ItemGroup>

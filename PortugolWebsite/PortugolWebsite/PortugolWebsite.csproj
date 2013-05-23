@@ -219,6 +219,11 @@
     <Content Include="Pages\Forum\postReply.aspx" />
     <Content Include="Pages\Forum\threadView.aspx" />
     <Content Include="Pages\Ide.aspx" />
+    <Content Include="Pages\logos\arrays.png" />
+    <Content Include="Pages\logos\calculo.png" />
+    <Content Include="Pages\logos\decisao.png" />
+    <Content Include="Pages\logos\funcoes.png" />
+    <Content Include="Pages\logos\repitacao.png" />
     <Content Include="Pages\Teste.aspx" />
     <Content Include="Pages\Tutoriais.aspx" />
     <Content Include="php\css\application-ltr-a256b57024170c98ba019bc1c06cf31f.css" />
@@ -674,7 +679,6 @@
     </None>
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="Pages\logos\" />
     <Folder Include="Scripts\Javascript\" />
     <Folder Include="Scripts\JQuery\" />
   </ItemGroup>

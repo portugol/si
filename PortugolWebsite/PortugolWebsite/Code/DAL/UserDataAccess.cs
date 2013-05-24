@@ -127,7 +127,7 @@ namespace PortugolWebsite.Code.DAL
 
         #region DataBase Insert new records
 
-        public static int InsertUser(string Nome, string Morada, string Contacto, string Email, int Lingua, string EmailMoodle, int TipoUtilizador, string Username, string Password)
+        public static int InsertUser(string Nome, string Morada, string Contacto, string Email, int? Lingua, string EmailMoodle, int TipoUtilizador, string Username, string Password)
         {
             //Obter o comando SQL
             string sqlQuery = UserQueries.InsertUser(Nome, Morada, Contacto, Email, Lingua, EmailMoodle, TipoUtilizador, Username, Password);

@@ -51,15 +51,22 @@ namespace PortugolWebsite.Code.DAL.Queries
         /// <param name="Username">Username</param>
         /// <param name="Password">Users encrypted password</param>
         /// <returns></returns>
-        internal static string InsertUser(string Nome, string Morada, string Contacto, string Email, int Lingua, string EmailMoodle, int TipoUtilizador, string Username, string Password)
+        internal static string InsertUser(string Nome, string Morada, string Contacto, string Email, int? Lingua, string EmailMoodle, int TipoUtilizador, string Username, string Password)
         {
             StringBuilder strQuery = new StringBuilder();
 
-
-            strQuery.Append(" Insert into utilizadores ( Nome, Morada, Contacto, Email, Lingua,");
-            strQuery.Append(" EmailMoodle, TipoUtilizador, Username, Passwrd, isActive )");
-            strQuery.Append(" Values ('" + Nome + "', '" + Morada + "', '" + Contacto + "', '" + Email + "', " + Lingua + ", '" + EmailMoodle + "', " + TipoUtilizador + ", '" + Username + "', '" + Password + "', 1");
-            
+            if (Lingua == null)
+            {
+                strQuery.Append(" Insert into utilizadores ( Nome, Morada, Contacto, Email, ");
+                strQuery.Append(" EmailMoodle, TipoUtilizador, Username, Passwrd, isActive )");
+                strQuery.Append(" Values ('" + Nome + "', '" + Morada + "', '" + Contacto + "', '" + Email + "', '" + EmailMoodle + "', " + TipoUtilizador + ", '" + Username + "', '" + Password + "', 1)");
+            }
+            else
+            {
+                strQuery.Append(" Insert into utilizadores ( Nome, Morada, Contacto, Email, Lingua,");
+                strQuery.Append(" EmailMoodle, TipoUtilizador, Username, Passwrd, isActive )");
+                strQuery.Append(" Values ('" + Nome + "', '" + Morada + "', '" + Contacto + "', '" + Email + "', " + Lingua + ", '" + EmailMoodle + "', " + TipoUtilizador + ", '" + Username + "', '" + Password + "', 1)");
+            }
             return strQuery.ToString();
         }
 

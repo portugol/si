@@ -16,42 +16,55 @@
 	<div id="FormContainer">
 	
 		
-		<div id="signUp" class="toggleTab"> <!-- signUp -->
-		
-			<div class="cleanForm" class="clearfix toggleTab">				
-					<p>
-						<label for="full-name">Nome Completo: <span class="requiredField">*</span></label>
-						<input type="text" id="Text1" name="full-name" value="" />
-						<em>Introduza o nome completo.</em>
-					</p>
+		<div id="signUp"> <!-- signUp -->
+		 <div id="DivMessages">
+            <asp:Label ID="lblDuplicateEmail" Text="Cannot register. There's already an account with that email."  Visible="false" ForeColor="Red" EnableViewState="false" runat="server"></asp:Label>
+            <asp:Label ID="lblDuplicateUserName" Text="Cannot register. There's already an account with that username."  Visible="false" ForeColor="Red" EnableViewState="false" runat="server"></asp:Label>
+            <asp:Label ID="lblInvalidEmail" Text="Cannot register. Invalid E-mail format."  Visible="false" ForeColor="Red" EnableViewState="false" runat="server"></asp:Label>
+            <asp:Label ID="lblInvalidPassword" Text="Cannot register. Invalid password format. Password must be at least 6 characters and must have at least 1 non alphanumeric character" ForeColor="Red"  Visible="false" EnableViewState="false" runat="server"></asp:Label>
+            <asp:Label ID="lblProviderError" Text="Cannot register. <p>Application error.</p><p>Website administrators have been automatically notified of this problem.</p><p> Please try again later.</p>"  Visible="false" ForeColor="Red" EnableViewState="false" runat="server"></asp:Label>
+            <%--<asp:Label ID="asdasd" Text='<%# Convert.ToString(Membership.Providers["CustomMembershipProvider"].MinRequiredPasswordLength) %>' runat="server"></asp:Label>--%>
+        </div>
+			<div class="cleanForm">				
+				<p>
+                    <asp:Label ID="lblName" AssociatedControlID="txtName" Text="Nome completo:" runat="server"></asp:Label>
+                    <span class="requiredField">*</span>
+                    <asp:TextBox ID="txtName"  runat="server"></asp:TextBox>
+					<em>Introduza o nome completo.</em>
+				</p>
 
-					<p>
-						<label for="username">Username: <span class="requiredField">*</span></label>
-						<input type="text" id="Text2" name="username" value="" />
-						<em>Caracteres compreendidos 3 a 12, letras ou numeros.</em>
-					</p>					
+				<p>
+                    <asp:Label ID="lblUsername" AssociatedControlID="txtUsername" Text="Username:" runat="server"></asp:Label>
+                    <span class="requiredField">*</span>
+                    <asp:TextBox ID="txtUsername"  runat="server"></asp:TextBox>
+					<em>Caracteres compreendidos 3 a 12, letras ou numeros.</em>
+				</p>					
 
-					<p>
-						<label for="email">Email : <span class="requiredField">*</span></label>
-						<input type="email" id="email1" name="email" value="" />
-						<em>Utilize o endereço de correio electrónico como. Exemplo.: aluno@portugol.com</em>
-					</p>		
+				<p>
+                    <asp:Label ID="lblEmail" AssociatedControlID="txtEmail" Text="Endereço de correio eletrónico:" runat="server"></asp:Label>
+                    <span class="requiredField">*</span>
+                    <asp:TextBox ID="txtEmail"  runat="server"></asp:TextBox>
+					<em>Utilize o endereço de correio electrónico como. Exemplo.: aluno@portugol.com</em>
+				</p>
                 
-                     <p>
-						<label for="password">Password: <span class="requiredField">*</span></label>
-						<input type="password" id="password1" name="password" value="" />
-						<em>Password compreendida 5 a 12 caracteres.</em>
-					</p>		
+                <p>
+                    <asp:Label ID="lblPassword" AssociatedControlID="txtPassword" Text="Senha de identificação:" runat="server"></asp:Label>
+                    <span class="requiredField">*</span>
+                    <asp:TextBox ID="txtPassword" TextMode="Password"  runat="server"></asp:TextBox>
+					<em>Password com o mínimo cinco caracteres e no máximo vinte, em que um deles seja alfanumérico e um especial.</em>
+				</p>		
                 
-                    <p>
-						<label for="password">Confirmar Password: <span class="requiredField">*</span></label>
-						<input type="password" id="password2" name="password" value="" /> <em>&nbsp;Repita novamente a password que foi preenchida no campo anterior.</em>
-					</p>	
+                <p>
+                    <asp:Label ID="lblConfirmPassword" AssociatedControlID="txtConfirmPassword" Text="Confirmar senha de identificação:" runat="server"></asp:Label>
+                    <span class="requiredField">*</span>
+                    <asp:TextBox ID="txtConfirmPassword" TextMode="Password" runat="server"></asp:TextBox>
+					<em>&nbsp;Repita novamente a password que foi preenchida no campo anterior.</em>
+				</p>	
 					
-					<input type="submit" value="Registar" />
-                  	<div class="formExtra">
-						<p><strong>Nota: </strong>Preencha obrigatoriamente os campos assinalados com (*).</p>
-					</div>
+                <asp:Button ID="btnSubmit" Text="Registar" OnClick="btnSubmit_Click" runat="server" />
+                <div class="formExtra">
+					<p><strong>Nota: </strong>Preencha obrigatoriamente os campos assinalados com (*).</p>
+				</div>
 			</div>
 		</div>
 	</div>

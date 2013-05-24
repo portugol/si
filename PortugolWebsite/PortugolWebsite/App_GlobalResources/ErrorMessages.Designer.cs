@@ -151,6 +151,15 @@ namespace Resources {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Credenciais de utilizador inválidas.
+        /// </summary>
+        internal static string loginFailureText {
+            get {
+                return ResourceManager.GetString("loginFailureText", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Utilizador sem permissões para alterar o registo.
         /// </summary>
         internal static string noChangePermissions {

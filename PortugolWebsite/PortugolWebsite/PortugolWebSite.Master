@@ -48,11 +48,11 @@
                         
                         <a id="logo" class="brand" href="/Index.aspx" title="Página Inicial"></a>					    
 
-                        <button class="btn btn-inverse hidden-phone pull-right" type="button" onclick="location.href='Account/Register.aspx'">Registar</button>
+                        <button class="btn btn-inverse hidden-phone pull-right" type="button" onclick="location.href='/Account/Register.aspx'">Registar</button>
 					    
 					    <ul class="nav pull-right" style="margin-right: 0;">
 						    <li>
-							    <a href="Account/Login.aspx" >Entrar</a>						  
+							    <a href="/Account/Login.aspx" >Entrar</a>						  
 						    </li>
 					    </ul>
                             

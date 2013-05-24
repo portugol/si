@@ -24,7 +24,7 @@
             <div class="cell neutral email-signin">
                 <h4><asp:Literal ID="Literal5" Text="Preencha os campos em baixo..." runat="server"></asp:Literal></h4>
                 <span class="or module"><asp:Literal ID="Literal6" Text="OU" runat="server"></asp:Literal></span>
-                <asp:Login ID="LoginControl"  onloggedin="setUserInfo"  runat="server">
+                <asp:Login ID="LoginControl" onloggedin="setUserInfo" FailureText='<%$ Resources:ErrorMessages, loginFailureText %>'  runat="server">
                     <LayoutTemplate>
                         <div style="margin: 0; padding: 0; display: inline">
                     
@@ -33,16 +33,17 @@
                             <br />
                             <asp:Literal ID="pass" Text="(*) Password:" runat="server"></asp:Literal>
                             <asp:TextBox ID="Password" runat="server"></asp:TextBox>
-                            <br />
+                            <br /><asp:Label ID="FailureText" ForeColor="Red" runat="server"></asp:Label>
                             <div class="remember-me">
                                 <label for="user_remember_me"><asp:CheckBox ID="RememberMe" runat="server" />                                
                                     <asp:Literal ID="online" Text="Mantenha-me sempre ligado!" runat="server"></asp:Literal>
                                 </label>                            
                             </div>
                             <asp:Button ID="Login" CommandName="Login" runat="server" Text="Login" />  
-                            <label>
+                            
                                 <hr />
-                            <a href="#" class="secondary"><asp:Literal ID="recoverypass" Text="Esqueceu sua senha?" runat="server"></asp:Literal></a></label>                    
+                                
+                            <a href="#" class="secondary"><asp:Literal ID="recoverypass" Text="Esqueceu sua senha?" runat="server"></asp:Literal></a></>                    
                             <br />
                            <a href="#" class="secondary"><asp:Literal ID="Literal1" Text="Registar-me!" runat="server"></asp:Literal></a></label>                  
                         </div>

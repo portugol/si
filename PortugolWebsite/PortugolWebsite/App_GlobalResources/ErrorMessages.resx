@@ -147,6 +147,9 @@
   <data name="invalidRecord" xml:space="preserve">
     <value>Registo inválido</value>
   </data>
+  <data name="loginFailureText" xml:space="preserve">
+    <value>Credenciais de utilizador inválidas</value>
+  </data>
   <data name="noChangePermissions" xml:space="preserve">
     <value>Utilizador sem permissões para alterar o registo</value>
   </data>

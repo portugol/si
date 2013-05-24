@@ -6,6 +6,28 @@
     <script async="" src="http://connect.facebook.net/en_US/all.js"></script>
     <link href="http://fonts.googleapis.com/css?family=Lobster" media="screen" rel="stylesheet" type="text/css" />
     <link href="css/login.css" media="screen" rel="stylesheet" type="text/css" />
+    <script>
+        window.fbAsyncInit = function () {
+            FB.init({
+                appId: '162387903926058', // App ID
+                channelUrl: 'http://localhost/', // Channel File
+                status: true, // check login status
+                cookie: true, // enable cookies to allow the server to access the session
+                xfbml: true  // parse XFBML
+            });
+            FB.ui({
+                method: 'feed'
+            });
+        };
+        // Load the SDK's source Asynchronously
+        (function (d, debug) {
+            var js, id = 'facebook-jssdk', ref = d.getElementsByTagName('script')[0];
+            if (d.getElementById(id)) { return; }
+            js = d.createElement('script'); js.id = id; js.async = true;
+            js.src = "//connect.facebook.net/en_US/all" + (debug ? "/debug" : "") + ".js";
+            ref.parentNode.insertBefore(js, ref);
+        }(document, /*debug*/ false));
+    </script>
 </asp:Content>
 <asp:Content ID="ContentMain" ContentPlaceHolderID="MainContent" runat="server">
     <div class="content">
@@ -17,7 +39,7 @@
             <div class="cell social-signin">
 
                 <h4><asp:Literal ID="Literal10" Text="Entrar no Portugol com..." runat="server"></asp:Literal></h4>
-                <a href="http://apps.facebook.com/aplicacaotestedemo" class="bttn social-signup facebook sign-up"><span class="icon-social-facebook"></span><asp:Literal ID="Literal9" Text="Sign in with Facebook" runat="server"></asp:Literal></a>
+                <a href="#" class="bttn social-signup facebook sign-up"><span class="icon-social-facebook"></span><asp:Literal ID="Literal9" Text="Sign in with Facebook" runat="server"></asp:Literal></a>
                 <a href="#" class="bttn social-signup google sign-up"><span class="icon-social-google"></span><asp:Literal ID="Literal8" Text="Sign in with Google" runat="server"></asp:Literal></a>
                 <a href="#" class="bttn social-signup twitter sign-up"><span class="icon-social-twitter"></span><asp:Literal ID="Literal7" Text="Sign in with Twitter" runat="server"></asp:Literal></a>
             </div>

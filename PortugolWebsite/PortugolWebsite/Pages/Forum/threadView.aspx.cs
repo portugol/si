@@ -16,9 +16,12 @@ namespace PortugolWebsite.Pages.Forum
             {
                 if (!string.IsNullOrEmpty(Request.QueryString["TopicId"])) 
                     hiddenTopicId.Value = Request.QueryString["TopicId"];
-
-                hyperLinkPostReply.NavigateUrl = "~/Pages/Forum/postReply.aspx?TopicId=" + hiddenTopicId.Value;
-
+                
+                if (User.Identity.IsAuthenticated)
+                {
+                    HyperLink hyperLinkPostReply = (HyperLink)LoginView1.FindControl("hyperLinkPostReply");
+                    hyperLinkPostReply.NavigateUrl = "~/Pages/Forum/postReply.aspx?TopicId=" + hiddenTopicId.Value;
+                }
                 LoadThreads();
             }
         }

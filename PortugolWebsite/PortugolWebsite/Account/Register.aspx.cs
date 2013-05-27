@@ -41,7 +41,8 @@ namespace PortugolWebsite.Account
             string password = txtPassword.Text.Trim();
             string email = txtEmail.Text.Trim();
             int idioma = Convert.ToInt32(ddlIdioma.SelectedValue);
-            int tipoUtilizador = 2; //TODO: Qual o tipo de utilizador que se deve associar por defeito?
+            DataView roleView = BusinessRole.GetRoles(null, "Aluno");
+            int tipoUtilizador = Convert.ToInt32(roleView[0]["Id"]);
 
             CustomMembershipUser newUser = mProvider.CreateUser(nome, null, null, email, idioma, null, tipoUtilizador, username, password, out userStatus);
             

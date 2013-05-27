@@ -9,8 +9,14 @@
 	<table border="0" cellpadding="0" cellspacing="0" width="100%">
 	<tr>
 		<td>
-			<a class="menuitem" href="forum.aspx">Forum Topics</a> &#062;
-            <asp:HyperLink ID="hyperLinkPostReply" NavigateUrl="~/Pages/Forum/createTopic.aspx" Text="Create a new topic" runat="server"></asp:HyperLink>
+			<a class="menuitem" href="forum.aspx">Forum Topics</a>
+            <asp:LoginView ID="LoginView1" runat="server">
+	            <LoggedInTemplate>
+                     &#062;
+	                <asp:HyperLink ID="hyperLinkPostReply" NavigateUrl="~/Pages/Forum/createTopic.aspx" Text="Create a new topic" runat="server"></asp:HyperLink>              
+	            </LoggedInTemplate>
+            </asp:LoginView>
+            
 		</td>
 	</tr>
 	<tr>

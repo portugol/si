@@ -311,6 +311,7 @@
     </Compile>
     <Compile Include="Code\BLL\BusinessForum.cs" />
     <Compile Include="Code\BLL\BusinessIdioma.cs" />
+    <Compile Include="Code\BLL\BusinessRole.cs" />
     <Compile Include="Code\BLL\BusinessUser.cs" />
     <Compile Include="Code\CustomMembership\CustomMembershipProvider.cs" />
     <Compile Include="Code\CustomMembership\CustomMembershipRole.cs" />

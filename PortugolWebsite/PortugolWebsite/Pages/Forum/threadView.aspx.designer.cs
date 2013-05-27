@@ -22,13 +22,13 @@ namespace PortugolWebsite.Pages.Forum {
         protected global::System.Web.UI.WebControls.HiddenField hiddenTopicId;
         
         /// <summary>
-        /// hyperLinkPostReply control.
+        /// LoginView1 control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.HyperLink hyperLinkPostReply;
+        protected global::System.Web.UI.WebControls.LoginView LoginView1;
         
         /// <summary>
         /// sortOrder control.

@@ -114,12 +114,18 @@ namespace PortugolWebsite.Code.DAL
 
         }
 
-        public static int UpdateUser(string Nome, string Morada, string Contacto, string Email, int Lingua, string EmailMoodle, int TipoUtilizador, string Username)
+        public static int UpdateUser(string Nome, string Morada, string Contacto, string Email, int Lingua, string EmailMoodle, string Username)
         {
             //Obter o comando SQL
-            string sqlQuery = UserQueries.UpdateUser(Nome, Morada, Contacto, Email, Lingua, EmailMoodle, TipoUtilizador,  Username);
+            string sqlQuery = UserQueries.UpdateUser(Nome, Morada, Contacto, Email, Lingua, EmailMoodle,  Username);
             //Executar o comando e devolver o número de registos afectados pela operação
             return DataAccessLayer.ExecuteNonQuery(sqlQuery);
+
+        }
+
+        public static int UpdateUserRole(int TipoUtilizador, string Username)
+        {
+            throw new NotImplementedException();
 
         }
 

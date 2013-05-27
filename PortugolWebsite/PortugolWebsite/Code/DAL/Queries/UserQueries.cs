@@ -118,19 +118,18 @@ namespace PortugolWebsite.Code.DAL.Queries
         }
 
 
-        internal static string UpdateUser(string Nome, string Morada, string Contacto, string Email, int Lingua, string EmailMoodle, int TipoUtilizador, string Username)
+        internal static string UpdateUser(string Nome, string Morada, string Contacto, string Email, int Lingua, string EmailMoodle, string Username)
         {
             StringBuilder strQuery = new StringBuilder();
 
 
             strQuery.Append(" Update utilizadores ");
             strQuery.Append(" set Nome = '" + Nome +"', ");
-            strQuery.Append(" set Morada = '" + Morada +"', ");
-            strQuery.Append(" set Contacto = '" + Contacto +"', ");
-            strQuery.Append(" set Email = '" + Email +"', ");
-            strQuery.Append(" set Lingua = '" + Lingua +"', ");
-            strQuery.Append(" set EmailMoodle = '" + EmailMoodle +"', ");
-            strQuery.Append(" set TipoUtilizador = " + TipoUtilizador +", ");
+            strQuery.Append("  Morada = '" + Morada +"', ");
+            strQuery.Append("  Contacto = '" + Contacto +"', ");
+            strQuery.Append("  Email = '" + Email +"', ");
+            strQuery.Append("  Lingua = " + Lingua +", ");
+            strQuery.Append("  EmailMoodle = '" + EmailMoodle +"' ");
             strQuery.Append(" Where Username = '" + Username + "'");
 
             return strQuery.ToString();
@@ -145,8 +144,8 @@ namespace PortugolWebsite.Code.DAL.Queries
 
 
             strQuery.Append(" SELECT utilizadores.Id, Nome, Morada, Contacto, Email, Lingua,");
-            strQuery.Append(" EmailMoodle, TipoUtilizador, Username, Password, isActive, tipo_user.id, Tipo ");
-            strQuery.Append(" FROM utilizadores inner join tipo_user on utilizadores.TipoUtilizador = tipo_user.Id ");
+            strQuery.Append(" EmailMoodle, TipoUtilizador, Username, Passwrd, isActive, Tipo_User.id, Tipo ");
+            strQuery.Append(" FROM utilizadores inner join Tipo_User on utilizadores.TipoUtilizador = Tipo_User.Id ");
             strQuery.Append(" WHERE 1 = 1 ");
 
             if (user_Id != null)

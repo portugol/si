@@ -120,14 +120,14 @@ namespace PortugolWebsite.Code.BLL
         /// <param name="preferedLanguage">user's favorite language</param>
         /// <param name="isActive">1 to set it active(unlock), 0 to set it inactive (lock)</param>
         /// <returns>true if record is successfuly updated, false otherwise</returns>
-        public static bool UpdateUser(string Nome, string Morada, string Contacto, string Email, int Lingua, string EmailMoodle, int TipoUtilizador, string Username)
+        public static bool UpdateUser(string Nome, string Morada, string Contacto, string Email, int Lingua, string EmailMoodle, string Username)
         {
 
             //Declarar a variável que irá conter o número de registos afectados
             int affectedRows = -1;
             try
             {
-                affectedRows = UserDataAccess.UpdateUser(Nome, Morada, Contacto, Email, Lingua, EmailMoodle, TipoUtilizador, Username);
+                affectedRows = UserDataAccess.UpdateUser(Nome, Morada, Contacto, Email, Lingua, EmailMoodle, Username);
                 if (affectedRows == 1)
                     return true;
                 else

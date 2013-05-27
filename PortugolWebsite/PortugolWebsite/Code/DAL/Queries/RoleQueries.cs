@@ -20,7 +20,7 @@ namespace PortugolWebsite.Code.DAL.Queries
             StringBuilder strQuery = new StringBuilder();
 
             strQuery.Append(" SELECT Id, Tipo ");
-            strQuery.Append(" FROM tipo_user ");
+            strQuery.Append(" FROM Tipo_User ");
             strQuery.Append(" WHERE 1 = 1 ");
 
             if (Id != null)

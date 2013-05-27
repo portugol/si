@@ -23,8 +23,8 @@ namespace PortugolWebsite.Account
 
         private void LoadIdioma()
         {
-            DataView view = BusinessIdioma.GetIdioma();
-            ddlIdioma.DataSource = view;
+            DataView idiomaView = BusinessIdioma.GetIdioma();
+            ddlIdioma.DataSource = idiomaView;
             ddlIdioma.DataValueField = "IdLingua";
             ddlIdioma.DataTextField = "Lingua";
             ddlIdioma.DataBind();
@@ -44,7 +44,7 @@ namespace PortugolWebsite.Account
             int tipoUtilizador = 2; //TODO: Qual o tipo de utilizador que se deve associar por defeito?
 
             CustomMembershipUser newUser = mProvider.CreateUser(nome, null, null, email, idioma, null, tipoUtilizador, username, password, out userStatus);
-            //TODO: CreateUser dá erro porque a língua é obrigatória... tem sentido que a língua seja obrigatória?!!!
+            
             switch (userStatus)
             {
                 case MembershipCreateStatus.DuplicateEmail:

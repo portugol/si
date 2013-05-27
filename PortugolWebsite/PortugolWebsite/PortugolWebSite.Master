@@ -48,13 +48,32 @@
                         
                         <a id="logo" class="brand" href="/Index.aspx" title="Página Inicial"></a>					    
 
-                        <button class="btn btn-inverse hidden-phone pull-right" type="button" onclick="location.href='/Account/Register.aspx'">Registar</button>
-					    
-					    <ul class="nav pull-right" style="margin-right: 0;">
-						    <li>
-							    <a href="/Account/Login.aspx" >Entrar</a>						  
-						    </li>
-					    </ul>
+                        <asp:LoginView ID="LoginView1" runat="server">
+                            <AnonymousTemplate>
+                                <button class="btn btn-inverse hidden-phone pull-right" type="button" onclick="location.href='/Account/Register.aspx'">Registar</button>
+					            <ul class="nav pull-right" style="margin-right: 0;">
+						            <li>
+							            <a href="/Account/Login.aspx" >Entrar</a>						  
+						            </li>
+					            </ul>
+                            </AnonymousTemplate>
+                            <LoggedInTemplate>
+                                <ul class="nav pull-right" style="margin-right: 0;">
+						            <li>
+                                        <asp:LoginStatus ID="LoginStatus1" LoginText="Login" LogoutText="Logout" runat="server" />
+						            </li>
+					            </ul>  
+                                <ul class="nav pull-right" style="margin-right: 0;">
+						            <li>
+							            <a href="/Account/MyProfile.aspx">My Account</a> 
+						            </li>
+					            </ul>                                
+                            </LoggedInTemplate>
+                        </asp:LoginView>
+                        
+                        
+
+                        
                             
                         <div id="google_translate_element" class="btn btn-inverse hidden-phone pull-right">
                         </div>
@@ -71,7 +90,15 @@
                     <li><a href="/Pages/Tutoriais.aspx">Tutoriais</a></li>
                     <li><a href="/Pages/Ide.aspx">IDE</a></li>
                     <li><a href="/Pages/Forum/forum.aspx">Fórum</a></li>
-                    <li><a href="/Pages/BackOffice/Default.aspx">BackOffice</a></li>
+                    <asp:LoginView ID="LoginView2" runat="server">
+                        <RoleGroups>
+                            <asp:RoleGroup Roles="Professor">
+                                <ContentTemplate>
+                                    <li><a href="/Pages/BackOffice/Default.aspx">BackOffice</a></li>
+                                </ContentTemplate>
+                            </asp:RoleGroup>
+                        </RoleGroups>
+                    </asp:LoginView>
                     <li><a href="#">Opção 6</a></li>                              
                     <li><a href="#">Opção 7</a></li>
 				    <!-- RODAPÉ DA BARRA LATERAL -->

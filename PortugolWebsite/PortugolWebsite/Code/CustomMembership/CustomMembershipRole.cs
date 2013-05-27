@@ -80,11 +80,11 @@ namespace PortugolWebsite.Code.CustomMembership
 
             try
             {
-                DataTable roleDataTable = RoleDataAccess.GetRoles();
+                DataTable roleDataTable = UserDataAccess.GetUserRole(null, username);
 
                 foreach (DataRow row in roleDataTable.Rows)
                 {
-                    rolesList.Add(Convert.ToString(row["RoleName"]));
+                    rolesList.Add(Convert.ToString(row["Tipo"]));
                 }
             }
             catch (Exception ex)

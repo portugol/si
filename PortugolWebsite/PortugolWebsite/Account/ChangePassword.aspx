@@ -6,8 +6,6 @@
 <asp:Content ID="Content2" ContentPlaceHolderID="MainContent" runat="server">
     <br />
     <br />
-    <br />
-    <br />
     <asp:ChangePassword ID="AlterarPassword" runat="server">
         <ChangePasswordTemplate>
             <div class="content">

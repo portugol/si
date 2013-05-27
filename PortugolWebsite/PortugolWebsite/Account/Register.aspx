@@ -46,6 +46,13 @@
                     <asp:TextBox ID="txtEmail"  runat="server"></asp:TextBox>
 					<em>Utilize o endereço de correio electrónico como. Exemplo.: aluno@portugol.com</em>
 				</p>
+
+				<p>
+                    <asp:Label ID="lblIdioma" AssociatedControlID="ddlIdioma" Text="Idioma preferido:" runat="server"></asp:Label>
+                    <span class="requiredField">*</span>
+                    <asp:DropDownList ID="ddlIdioma" runat="server"></asp:DropDownList>
+					<em>Escolha um idioma</em>
+				</p>
                 
                 <p>
                     <asp:Label ID="lblPassword" AssociatedControlID="txtPassword" Text="Senha de identificação:" runat="server"></asp:Label>

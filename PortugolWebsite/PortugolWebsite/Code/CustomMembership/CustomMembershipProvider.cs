@@ -440,7 +440,7 @@ namespace PortugolWebsite.Code.CustomMembership
         }
         #endregion
 
-        public CustomMembershipUser CreateUser(string Nome, string Morada, string Contacto, string Email, int? Lingua, string EmailMoodle, int TipoUtilizador, string Username, string Password, out MembershipCreateStatus status)
+        public CustomMembershipUser CreateUser(string Nome, string Morada, string Contacto, string Email, int Lingua, string EmailMoodle, int TipoUtilizador, string Username, string Password, out MembershipCreateStatus status)
         {
             //Declarar variável indicadora/descritiva de possiveis erros 
             string outErrorMessage = string.Empty;

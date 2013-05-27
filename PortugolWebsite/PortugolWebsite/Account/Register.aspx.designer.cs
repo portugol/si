@@ -121,6 +121,24 @@ namespace PortugolWebsite.Account {
         protected global::System.Web.UI.WebControls.TextBox txtEmail;
         
         /// <summary>
+        /// lblIdioma control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Label lblIdioma;
+        
+        /// <summary>
+        /// ddlIdioma control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.DropDownList ddlIdioma;
+        
+        /// <summary>
         /// lblPassword control.
         /// </summary>
         /// <remarks>

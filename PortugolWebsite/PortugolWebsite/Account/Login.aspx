@@ -54,7 +54,7 @@
                                 <asp:TextBox ID="UserName" runat="server"></asp:TextBox>
                             <br />
                             <asp:Literal ID="pass" Text="(*) Password:" runat="server"></asp:Literal>
-                            <asp:TextBox ID="Password" runat="server"></asp:TextBox>
+                            <asp:TextBox ID="Password" TextMode="Password" runat="server"></asp:TextBox>
                             <br /><asp:Label ID="FailureText" ForeColor="Red" runat="server"></asp:Label>
                             <div class="remember-me">
                                 <label for="user_remember_me"><asp:CheckBox ID="RememberMe" runat="server" />                                

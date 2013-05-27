@@ -1,11 +1,6 @@
 ﻿using PortugolWebsite.Code.BLL;
 using System;
-using System.Collections.Generic;
 using System.Data;
-using System.Linq;
-using System.Web;
-using System.Web.UI;
-using System.Web.UI.WebControls;
 
 namespace PortugolWebsite.Account
 {
@@ -28,7 +23,7 @@ namespace PortugolWebsite.Account
             {
                 DataRowView recordRow = dataView[0];
                 //Colocar em sessão o id do user logado
-                Session["user_id"] = Convert.ToInt32(recordRow["User_Id"]);
+                Session["user_id"] = Convert.ToInt32(recordRow["Id"]);
             }
             
         }

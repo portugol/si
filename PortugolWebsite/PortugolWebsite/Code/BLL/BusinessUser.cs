@@ -35,7 +35,7 @@ namespace PortugolWebsite.Code.BLL
                 {//registos encontrados
 
                     //Remover a coluna da Password
-                    dataTable.Columns.Remove("Password");
+                    dataTable.Columns.Remove("Passwrd");
                     //      NOTA: Não se quer o servidor responda mostrando a password do utilizador.
 
                     return new DataView(dataTable);

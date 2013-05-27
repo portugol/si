@@ -310,15 +310,16 @@
       <DependentUpon>SuccessMessages.resx</DependentUpon>
     </Compile>
     <Compile Include="Code\BLL\BusinessForum.cs" />
+    <Compile Include="Code\BLL\BusinessIdioma.cs" />
     <Compile Include="Code\BLL\BusinessUser.cs" />
     <Compile Include="Code\CustomMembership\CustomMembershipProvider.cs" />
     <Compile Include="Code\CustomMembership\CustomMembershipRole.cs" />
     <Compile Include="Code\CustomMembership\CustomMembershipUser.cs" />
-    <Compile Include="Code\DAL\CapituloDataAccess.cs" />
     <Compile Include="Code\DAL\DataAccessLayer.cs" />
     <Compile Include="Code\DAL\ForumDataAccess.cs" />
-    <Compile Include="Code\DAL\Queries\CapituloQueries.cs" />
+    <Compile Include="Code\DAL\IdiomaDataAccess.cs" />
     <Compile Include="Code\DAL\Queries\ForumQueries.cs" />
+    <Compile Include="Code\DAL\Queries\IdiomaQueries.cs" />
     <Compile Include="Code\DAL\Queries\RoleQueries.cs" />
     <Compile Include="Code\DAL\Queries\UserQueries.cs" />
     <Compile Include="Code\DAL\RoleDataAccess.cs" />

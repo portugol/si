@@ -79,7 +79,6 @@
 }
  
 body {
-	overflow: hidden;
 	margin: 0px;
 	font-family: Segoe UI;
 }
@@ -5614,6 +5613,5 @@ UNUSEDUNUSED.character, [class*="character-"] {
     margin:10px;
       width: 100% ;
   margin-left: auto ;
-  margin-right: auto ;
-  overflow:scroll;
+
 }

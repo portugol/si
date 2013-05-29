@@ -4,19 +4,18 @@
     <link href="css/alterarPass.css" media="screen" rel="stylesheet" type="text/css" />
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="MainContent" runat="server">
-    <br />
-    <br />
+    <div class="content">
+        <br />
+        <br />
         <asp:ChangePassword ID="AlterarPassword" runat="server">
             <ChangePasswordTemplate>
-                <div class="content">
 
-                    <h2 class="register-to">&nbsp;
+
+                <h2 class="register-to">&nbsp;
                     <asp:Literal ID="txtMudaPass" Text="Alterar a Password" runat="server"></asp:Literal></h2>
-                </div>
+
                 <!-- Register Tab Content -->
                 <div id="FormContainer">
-
-
                     <div id="signUp" class="toggleTab">
                         <!-- signUp -->
 
@@ -61,5 +60,6 @@
                 </div>
             </ChangePasswordTemplate>
         </asp:ChangePassword>
+    </div>
 </asp:Content>
-    
+

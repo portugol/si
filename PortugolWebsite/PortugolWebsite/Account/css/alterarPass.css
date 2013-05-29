@@ -38,6 +38,9 @@ div#FormContainer {
 	-moz-border-radius: 5px;
 	border-radius: 5px;
 }
+div#content {
+    align-content:center;
+}
 
 /* ---------- Registar ---------- */
 div#signUp{

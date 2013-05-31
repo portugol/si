@@ -1,0 +1,15 @@
+F:\si\PortugolWebsite\PortugolWebsite\bin\PortugolWebsite.dll
+F:\si\PortugolWebsite\PortugolWebsite\bin\PortugolWebsite.pdb
+F:\si\PortugolWebsite\PortugolWebsite\bin\AjaxControlToolkit.dll
+F:\si\PortugolWebsite\PortugolWebsite\bin\Microsoft.Practices.EnterpriseLibrary.Caching.Database.dll
+F:\si\PortugolWebsite\PortugolWebsite\bin\Microsoft.Practices.EnterpriseLibrary.Caching.dll
+F:\si\PortugolWebsite\PortugolWebsite\bin\Microsoft.Practices.EnterpriseLibrary.Common.dll
+F:\si\PortugolWebsite\PortugolWebsite\bin\Microsoft.Practices.EnterpriseLibrary.Data.dll
+F:\si\PortugolWebsite\PortugolWebsite\bin\Microsoft.Practices.ServiceLocation.dll
+F:\si\PortugolWebsite\PortugolWebsite\bin\Microsoft.Practices.Unity.dll
+F:\si\PortugolWebsite\PortugolWebsite\bin\Microsoft.Practices.Unity.Interception.dll
+F:\si\PortugolWebsite\PortugolWebsite\bin\MySql.Data.dll
+F:\si\PortugolWebsite\PortugolWebsite\bin\MySql.Data.Entity.dll
+F:\si\PortugolWebsite\PortugolWebsite\obj\Debug\PortugolWebsite.csprojResolveAssemblyReference.cache
+F:\si\PortugolWebsite\PortugolWebsite\obj\Debug\PortugolWebsite.dll
+F:\si\PortugolWebsite\PortugolWebsite\obj\Debug\PortugolWebsite.pdb

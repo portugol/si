@@ -5,7 +5,12 @@
 <asp:Content ID="Content2" ContentPlaceHolderID="MainContent" runat="server">
     <div class="content"> 
                          
-        <h2 class="register-to">&nbsp; <asp:Literal ID="Literal11" Text="A minha conta" runat="server"></asp:Literal></h2>
+        <h2 class="register-to">&nbsp;
+             <asp:Literal ID="Literal11" Text="A minha conta" runat="server"></asp:Literal>
+        </h2>
+        <h4 class="register-to">&nbsp;
+            <asp:HyperLink ID="linkChangePassword" Text="Alterar senha de identificação" NavigateUrl="~/Account/ChangePassword.aspx" runat="server"></asp:HyperLink>
+        </h4>
     </div>
         <!-- Register Tab Content -->
 	<div id="FormContainer">

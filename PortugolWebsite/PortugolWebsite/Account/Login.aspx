@@ -65,9 +65,9 @@
                             
                                 <hr />
                                 
-                            <a href="#" class="secondary"><asp:Literal ID="recoverypass" Text="Esqueceu sua senha?" runat="server"></asp:Literal></a></>                    
+                            <a href="RecoverPassword.aspx" class="secondary"><asp:Literal ID="recoverypass" Text="Esqueceu sua senha?" runat="server"></asp:Literal></a></>                    
                             <br />
-                           <a href="#" class="secondary"><asp:Literal ID="Literal1" Text="Registar-me!" runat="server"></asp:Literal></a></label>                  
+                           <a href="Register.aspx" class="secondary"><asp:Literal ID="Literal1" Text="Registar-me!" runat="server"></asp:Literal></a></label>                  
                         </div>
                      </LayoutTemplate>
                 </asp:Login>

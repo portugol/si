@@ -22,6 +22,15 @@ namespace PortugolWebsite.Account {
         protected global::System.Web.UI.WebControls.Literal Literal11;
         
         /// <summary>
+        /// linkChangePassword control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.HyperLink linkChangePassword;
+        
+        /// <summary>
         /// lblUsername control.
         /// </summary>
         /// <remarks>
@@ -101,5 +110,14 @@ namespace PortugolWebsite.Account {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.Button btnSubmit;
+        
+        /// <summary>
+        /// btnChangePassword control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Button btnChangePassword;
     }
 }

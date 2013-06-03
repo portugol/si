@@ -160,6 +160,9 @@ namespace PortugolWebsite.Code.CustomMembership
         public override bool ValidateUser(string strUsername, string strPassword)
         {
             string userPassword;
+            
+            if (string.IsNullOrEmpty(strUsername))
+                return false;
 
             try
             {
@@ -325,14 +328,7 @@ namespace PortugolWebsite.Code.CustomMembership
                     string morada = Convert.ToString(userDataTable.Rows[0]["Morada"]);
                     string contacto = Convert.ToString(userDataTable.Rows[0]["Contacto"]);
                     bool isActive = Convert.ToBoolean(userDataTable.Rows[0]["isActive"]);
-                    DateTime CreationDate = Convert.ToDateTime(userDataTable.Rows[0]["Created"]);
-                    string PreferedLanguage = Convert.ToString(userDataTable.Rows[0]["PreferedLanguage"]);
-                    DateTime? Updated;
-
-                    if (userDataTable.Rows[0]["Updated"] == DBNull.Value)
-                        Updated = null;
-                    else
-                        Updated = Convert.ToDateTime(userDataTable.Rows[0]["Updated"]);
+                    string PreferedLanguage = Convert.ToString(userDataTable.Rows[0]["Lingua"]);
 
                     //Declarar novo objecto MembershipUser
                     CustomMembershipUser user = new CustomMembershipUser(username, name, morada, contacto, isActive, PreferedLanguage);

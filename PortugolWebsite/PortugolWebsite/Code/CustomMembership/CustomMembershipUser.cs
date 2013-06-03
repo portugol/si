@@ -117,6 +117,16 @@ namespace PortugolWebsite.Code.CustomMembership
             return base.ResetPassword(passwordAnswer);
         }
 
+        public override string UserName
+        {
+            get
+            {
+                return this.p_username;
+            }
+        }
+
+        
+
         #endregion
 
 

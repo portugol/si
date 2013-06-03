@@ -24,6 +24,5 @@ D:\GitHubRepository\PortugolWebsite\PortugolWebsite\bin\Microsoft.Practices.Serv
 D:\GitHubRepository\PortugolWebsite\PortugolWebsite\bin\Microsoft.Practices.Unity.dll
 D:\GitHubRepository\PortugolWebsite\PortugolWebsite\bin\Microsoft.Practices.Unity.Interception.dll
 D:\GitHubRepository\PortugolWebsite\PortugolWebsite\bin\MySql.Data.Entity.dll
-D:\GitHubRepository\PortugolWebsite\PortugolWebsite\obj\Debug\PortugolWebsite.csprojResolveAssemblyReference.cache
 D:\GitHubRepository\PortugolWebsite\PortugolWebsite\obj\Debug\PortugolWebsite.dll
 D:\GitHubRepository\PortugolWebsite\PortugolWebsite\obj\Debug\PortugolWebsite.pdb

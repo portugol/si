@@ -7,7 +7,7 @@
     <div class="content">
         <br />
         <br />
-        <asp:ChangePassword ID="AlterarPassword" runat="server">
+        <asp:ChangePassword ID="AlterarPassword" DisplayUserName="true" runat="server">
             <ChangePasswordTemplate>
 
 
@@ -20,6 +20,9 @@
                         <!-- signUp -->
 
                         <div class="cleanForm">
+                            <p>
+                                <asp:TextBox ID="UserName" Text="" Enabled="false" CssClass="disabled" runat="server"></asp:TextBox>
+                            </p>
                             <p>
                                 <asp:Label ID="CurrentPasswordLabel" runat="server" AssociatedControlID="CurrentPassword" Text="Password:"></asp:Label>
 

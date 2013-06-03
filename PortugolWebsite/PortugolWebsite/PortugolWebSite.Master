@@ -1,0 +1,146 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="PortugolWebSite.master.cs" Inherits="PortugolWebsite.PortugolWebSite" %>
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title>Portugol website</title>
+
+    <%--<link rel="stylesheet" href="css/allcss.css" />--%>
+    <link rel="stylesheet" href="css/cleanCss.css" />
+    
+    <%--    Style para o google translate--%>
+        <style type="text/css">
+            .goog-te-gadget-icon {display:none;}
+            .goog-te-gadget-simple a {text-decoration: none !important;}
+            .goog-te-banner-frame.skiptranslate {display: none !important;}
+            .goog-tooltip { display: none !important;}
+            .goog-tooltip:hover { display: none !important;}
+            .goog-text-highlight {  background-color: transparent !important;
+                                    border: none !important;
+                                    box-shadow: none !important;}
+            body { top: 0px !important;}
+        </style>
+
+    <asp:ContentPlaceHolder ID="ContentHead" runat="server"></asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="MasterForm" runat="server">
+        
+        <div id="divHiddenFields">
+            <asp:HiddenField ID="hiddenShow_hide" value="1" runat="server" />
+        </div>
+
+        <div id="top">
+            <div class="navbar navbar-inverse">
+                <div class="navbar-inner">
+                    <div class="wrapper" >
+                        <ul class="nav pull-left">
+                            <li>
+							    <button id="btnHide" class="btn btn-navbar" onclick="show_hide(); return false;" title="Fechar Menu">
+								    <span class="icon-bar"></span>
+                                    <span class="icon-bar"></span>
+                                    <span class="icon-bar"></span>	
+                                </button>
+							    
+                            </li>
+                        </ul>
+                        
+                        <a id="logo" class="brand" href="/Index.aspx" title="Página Inicial"></a>					    
+
+                        <asp:LoginView ID="LoginView1" runat="server">
+                            <AnonymousTemplate>
+                                <button class="btn btn-inverse hidden-phone pull-right" type="button" onclick="location.href='/Account/Register.aspx'">Registar</button>
+					            <ul class="nav pull-right" style="margin-right: 0;">
+						            <li>
+							            <a href="/Account/Login.aspx" >Entrar</a>						  
+						            </li>
+					            </ul>
+                            </AnonymousTemplate>
+                            <LoggedInTemplate>
+                                <ul class="nav pull-right" style="margin-right: 0;">
+						            <li>
+                                        <asp:LoginStatus ID="LoginStatus1" LoginText="Login" LogoutText="Logout" runat="server" />
+						            </li>
+					            </ul>  
+                                <ul class="nav pull-right" style="margin-right: 0;">
+						            <li>
+							            <a href="/Account/MyProfile.aspx">My Account</a> 
+						            </li>
+					            </ul>                                
+                            </LoggedInTemplate>
+                        </asp:LoginView>
+                        
+                        
+
+                        
+                            
+                        <div id="google_translate_element" class="btn btn-inverse hidden-phone pull-right">
+                        </div>
+                        
+				    </div>
+                </div>
+            </div>
+        </div>
+
+	    <!-- BARRA LATERAL -->
+        <div id="sidebar">
+            <div class="sidebar-inner">
+                <ul id="menu" class="nav nav-list">
+                    <li><a href="/Pages/Tutoriais.aspx">Tutoriais</a></li>
+                    <li><a href="/Pages/Ide.aspx">IDE</a></li>
+                    <li><a href="/Pages/Forum/forum.aspx">Fórum</a></li>
+                    <asp:LoginView ID="LoginView2" runat="server">
+                        <RoleGroups>
+                            <asp:RoleGroup Roles="Professor">
+                                <ContentTemplate>
+                                    <li><a href="/Pages/BackOffice/Default.aspx">BackOffice</a></li>
+                                </ContentTemplate>
+                            </asp:RoleGroup>
+                        </RoleGroups>
+                    </asp:LoginView>
+                    <li><a href="#">Opção 6</a></li>                              
+                    <li><a href="#">Opção 7</a></li>
+				    <!-- RODAPÉ DA BARRA LATERAL -->
+                    <li>
+                        <footer id="footer" class="footer">
+                            <div class="divider"></div>
+                            <p class="copyright">&copy; 2013 Portugol IDE</p>
+                        </footer>    
+                    </li>
+				    <!-- FIM DE RODAPÉ DA BARRA LATERAL -->
+                </ul>
+		    </div>
+        </div>
+	    <!-- FIM DE BARRA LATERAL -->
+
+	    <!--  ÁREA DE TRABALHO -->
+        <div id="content">
+            <div class="container-fluid">
+                <!-- Horizontal tabs -->
+                <div id="slidetabs" class="st-tabs-horizontal">   
+                    <div class="st-tabs-container">
+                        <asp:Label ID="lblMainTitle" Text="" ForeColor="#302E2E" Font-Size="X-Large" Font-Bold="true" runat="server"></asp:Label>
+                    </div>
+			    </div>
+		    </div>
+		    <div id="divWorkArea" class="WorkArea">
+			    <asp:ContentPlaceHolder ID="MainContent" runat="server"/>
+		    </div>
+        </div> 
+        
+        <script type="text/javascript">
+            function googleTranslateElementInit() {
+                new google.translate.TranslateElement
+                (
+                    {
+                    pageLanguage: 'pt', layout: google.translate.TranslateElement.InlineLayout.SIMPLE
+                    },
+                    'google_translate_element'
+                );
+            }
+        </script>
+        <script src="http://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit" type="text/javascript"></script>  
+    </form>
+</body>
+</html>

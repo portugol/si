@@ -1,0 +1,11 @@
+
+Neste projecto estão os Logins para:
+	--> FACEBOOK   (concluido)
+        --> Google     (concluido)
+        --> Twitter    (em contrução)
+        --> Microsoft  (opcional/construção)
+
+
+Este projecto foi desenvolvido a parte para testes às aplicações de forma a não danificar o projecto principal e no fim podermos integra-lo as necessidades
+dos requisitos propostos.
+        

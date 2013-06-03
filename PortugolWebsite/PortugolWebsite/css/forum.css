@@ -1,0 +1,122 @@
+.error { font-family: sans-serif, arial; font-size: 12px; color:#cc0000; }
+.labelNew { font-weight: bold; color:#cc0000; }
+
+/* GLOBAL SETTING OF FONT TYPES */
+/*
+p, a, th, td, ul, ol, li, dl, dd, dt, label, div, span, input, textarea
+{
+    font-family: sans-serif, Verdana, Arial, Helvetica, sans-serif;
+    font-size: 12px;
+    color: #000000;
+}
+*/
+.listheader {
+    padding: 0.4em;
+    font-weight: bold;
+    color: #ffffff;
+    background-color: #243B52;
+}
+
+.listColumnText {
+    padding: 0.8em;
+    vertical-align: top;
+    border-bottom: 1px solid #243B52;
+    font-size: 10px;
+}
+
+.listColumnNumber {
+    padding: 0.8em;
+    vertical-align: top;
+    text-align: center;
+    border-bottom: 1px solid #243B52;
+    font-size: 10px;
+}
+
+a.listHeaderLink {
+    color: #ffffcc;
+    text-decoration: none;
+}
+
+a.listItemLink {
+    color: #0D2888;
+    text-decoration: none;
+}
+
+a.listItemLink:hover {
+    color: #F27900;
+    text-decoration: underline;
+}
+
+    
+a.menuitem {
+        font-weight: bold;
+        text-decoration: none;
+        color: #666698;
+}
+
+a.menuitem:hover {
+	font-weight: bold;
+        text-decoration: underline;
+        color: #000000;
+}
+
+a.pageLink {
+	font-weight: bold;
+	text-decoration: none;
+	color: #4373b4;
+}
+
+a.pageLink:hover {
+	font-weight: bold;
+	text-decoration: underline;
+	color: #4373b4;
+}
+
+a.lastPostLink {
+	font-size: 10px;
+	font-weight: bold;
+	text-decoration: none;
+	color: #4373b4;
+}
+
+a.lastPostLink:hover {
+	font-size: 10px;
+	font-weight: bold;
+	text-decoration: underline;
+	color: #4373b4;
+}
+
+
+
+input {
+	background: #f1f1f1;
+	border: 1 solid #243B52;
+	color: #000000
+}
+
+input.radio {
+	background: transparent;
+	border: 0;
+}
+
+
+textarea {
+	background: #f1f1f1;
+	border: 1 solid #243B52;
+	color: #000000
+}
+
+select {
+	background: #f1f1f1;
+	border: 1 solid #243B52;
+	color: #000000
+}
+
+
+tr.bglight, td.bglight, td.bglightextra {
+        background-color: #f1f1f1;
+}
+
+tr.bgdark, td.bgdark, td.bgdarkextra {
+        background-color: #dddddd;
+}

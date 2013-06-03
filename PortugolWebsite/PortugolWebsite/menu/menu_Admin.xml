@@ -1,0 +1,59 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<menu>
+  <item textoParaEcra="Início" url="/Pages/BackOffice/Default.aspx" descricaoUrl="página de Início" imagemUrl=""></item>
+  <item textoParaEcra="Administração" url="#" descricaoUrl="" imagemUrl="">
+    <item textoParaEcra="Listar Utilizadores" url="/Pages/BackOffice/Utilizadores/Listar.aspx" descricaoUrl="" imagemUrl=""></item>
+    <item textoParaEcra="Listar Tipo Utilizador" url="/Pages/BackOffice/Tipo_User/Listar.aspx" descricaoUrl="" imagemUrl=""></item>
+    <item textoParaEcra="Adicionar Tipo Utilizador" url="/Pages/BackOffice/Tipo_User/Inserir.aspx" descricaoUrl="" imagemUrl=""></item>
+    <item textoParaEcra="Editar Tipo Utilizador" url="/Pages/BackOffice/Tipo_User/Editar.aspx" descricaoUrl="" imagemUrl=""></item>
+    <item textoParaEcra="Apagar Tipo Utilizador" url="/Pages/BackOffice/Tipo_User/Apagar.aspx" descricaoUrl="" imagemUrl=""></item>
+  </item>
+  <item textoParaEcra="Lingua" url="#" descricaoUrl="" imagemUrl="">
+    <item textoParaEcra="Listar Linguas" url="/Pages/BackOffice/Lingua/Listar.aspx" descricaoUrl="" imagemUrl=""></item>
+    <item textoParaEcra="Adicionar Linguas" url="/Pages/BackOffice/Lingua/Inserir.aspx" descricaoUrl="" imagemUrl=""></item>
+    <item textoParaEcra="Editar Linguas" url="/Pages/BackOffice/Lingua/Editar.aspx" descricaoUrl="" imagemUrl=""></item>
+    <item textoParaEcra="Apagar Linguas" url="/Pages/BackOffice/Lingua/Apagar.aspx" descricaoUrl="" imagemUrl=""></item>
+  </item>
+  <item textoParaEcra="Capitulo" url="#" descricaoUrl="" imagemUrl="">
+    <item textoParaEcra="Apagar Capitulo" url="/Pages/BackOffice/Capitulo/Apagar.aspx" descricaoUrl="" imagemUrl=""></item>
+    <item textoParaEcra="Editar Capitulo" url="/Pages/BackOffice/Capitulo/Editar.aspx" descricaoUrl="" imagemUrl=""></item>
+    <item textoParaEcra="Adicionar Capitulo" url="/Pages/BackOffice/Capitulo/Inserir.aspx" descricaoUrl="" imagemUrl=""></item>
+    <item textoParaEcra="Listar Capitulos" url="/Pages/BackOffice/Capitulo/Listar.aspx" descricaoUrl="" imagemUrl=""></item>
+  </item>
+  <item textoParaEcra="Perguntas" url="#" descricaoUrl="" imagemUrl="">
+    <item textoParaEcra="Apagar Perguntas" url="/Pages/BackOffice/Perguntas/Apagar.aspx" descricaoUrl="" imagemUrl=""></item>
+    <item textoParaEcra="Editar Perguntas" url="/Pages/BackOffice/Perguntas/Editar.aspx" descricaoUrl="" imagemUrl=""></item>
+    <item textoParaEcra="Adicionar Perguntas" url="/Pages/BackOffice/Perguntas/Inserir.aspx" descricaoUrl="" imagemUrl=""></item>
+    <item textoParaEcra="Listar Perguntas" url="/Pages/BackOffice/Perguntas/Listar.aspx" descricaoUrl="" imagemUrl=""></item>
+  </item>
+  <item textoParaEcra="Solucao" url="#" descricaoUrl="" imagemUrl="">
+    <item textoParaEcra="Apagar Solucao" url="/Pages/BackOffice/Solucao/Apagar.aspx" descricaoUrl="" imagemUrl=""></item>
+    <item textoParaEcra="Editar Solucao" url="/Pages/BackOffice/Solucao/Editar.aspx" descricaoUrl="" imagemUrl=""></item>
+    <item textoParaEcra="Adicionar Solucao" url="/Pages/BackOffice/Solucao/Inserir.aspx" descricaoUrl="" imagemUrl=""></item>
+    <item textoParaEcra="Listar Solucao" url="/Pages/BackOffice/Solucao/Listar.aspx" descricaoUrl="" imagemUrl=""></item>
+  </item>
+  <item textoParaEcra="Teste" url="#" descricaoUrl="" imagemUrl="">
+    <item textoParaEcra="Listar Testes" url="/Pages/BackOffice/Teste/Listar.aspx" descricaoUrl="" imagemUrl=""></item>
+    <item textoParaEcra="Listar Tipo Testes" url="/Pages/BackOffice/Tipo_Teste/Listar.aspx" descricaoUrl="" imagemUrl=""></item>
+    <item textoParaEcra="Adicionar Tipo Testes" url="/Pages/BackOffice/Tipo_Teste/Inserir.aspx" descricaoUrl="" imagemUrl=""></item>
+    <item textoParaEcra="Editar Tipo Testes" url="/Pages/BackOffice/Tipo_Teste/Editar.aspx" descricaoUrl="" imagemUrl=""></item>
+  </item>
+  <item textoParaEcra="Tipo Pergunta" url="#" descricaoUrl="" imagemUrl="">
+    <item textoParaEcra="Apagar Tipo Pergunta" url="/Pages/BackOffice/Tipo_Perg/Apagar.aspx" descricaoUrl="" imagemUrl=""></item>
+    <item textoParaEcra="Editar Tipo Pergunta" url="/Pages/BackOffice/Tipo_Perg/Editar.aspx" descricaoUrl="" imagemUrl=""></item>
+    <item textoParaEcra="Adicionar Tipo Pergunta" url="/Pages/BackOffice/Tipo_Perg/Inserir.aspx" descricaoUrl="" imagemUrl=""></item>
+    <item textoParaEcra="Listar Tipo Pergunta" url="/Pages/BackOffice/Tipo_Perg/Listar.aspx" descricaoUrl="" imagemUrl=""></item>
+  </item>
+  <item textoParaEcra="Linguagens Programação" url="#" descricaoUrl="" imagemUrl="">
+    <item textoParaEcra="Apagar Linguagem Prog" url="/Pages/BackOffice/Linguagem_Prog/Apagar.aspx" descricaoUrl="" imagemUrl=""></item>
+    <item textoParaEcra="Editar Linguagem Prog" url="/Pages/BackOffice/Linguagem_Prog/Editar.aspx" descricaoUrl="" imagemUrl=""></item>
+    <item textoParaEcra="Adicionar Linguagem Prog" url="/Pages/BackOffice/Linguagem_Prog/Inserir.aspx" descricaoUrl="" imagemUrl=""></item>
+    <item textoParaEcra="Listar Linguagem Prog" url="/Pages/BackOffice/Linguagem_Prog/Listar.aspx" descricaoUrl="" imagemUrl=""></item>
+  </item>
+  <item textoParaEcra="Resolução" url="#" descricaoUrl="" imagemUrl="">
+    <item textoParaEcra="Apagar Resolução" url="/Pages/BackOffice/Resolucao/Apagar.aspx" descricaoUrl="" imagemUrl=""></item>
+    <item textoParaEcra="Editar Resolução" url="/Pages/BackOffice/Resolucao/Editar.aspx" descricaoUrl="" imagemUrl=""></item>
+    <item textoParaEcra="Adicionar Resolução" url="/Pages/BackOffice/Resolucao/Inserir.aspx" descricaoUrl="" imagemUrl=""></item>
+    <item textoParaEcra="Listar Resolução" url="/Pages/BackOffice/Resolucao/Listar.aspx" descricaoUrl="" imagemUrl=""></item>
+  </item>
+</menu>

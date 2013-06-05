@@ -42,9 +42,9 @@
                                     <span class="icon-bar"></span>
                                     <span class="icon-bar"></span>	
                                 </button>
-							    
                             </li>
                         </ul>
+
                         
                         <a id="logo" class="brand" href="/Index.aspx" title="Página Inicial"></a>					    
 
@@ -99,8 +99,12 @@
                             </asp:RoleGroup>
                         </RoleGroups>
                     </asp:LoginView>
-                    <li><a href="#">Opção 6</a></li>                              
-                    <li><a href="#">Opção 7</a></li>
+                    <asp:LoginView ID="LoginView3" runat="server">
+                        <LoggedInTemplate>
+                            <li><a href="Pages/Teste.aspx">Realizar teste</a></li>
+                        </LoggedInTemplate>
+                    </asp:LoginView>                            
+                    <li><a href="#">Tutor</a></li>
 				    <!-- RODAPÉ DA BARRA LATERAL -->
                     <li>
                         <footer id="footer" class="footer">

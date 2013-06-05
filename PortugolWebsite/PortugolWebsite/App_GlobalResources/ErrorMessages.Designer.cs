@@ -142,6 +142,15 @@ namespace Resources {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Registo não efetuado. Formato de senha d eidentificação inválido. A senha deve ter pelo menos 6 caracteres e deve ter pelo menos um caractere não alfanumérico.
+        /// </summary>
+        internal static string invalidPasswordFormat {
+            get {
+                return ResourceManager.GetString("invalidPasswordFormat", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Registo inválido.
         /// </summary>
         internal static string invalidRecord {

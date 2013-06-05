@@ -87,6 +87,10 @@
       <SpecificVersion>False</SpecificVersion>
       <HintPath>DLL\MySql.Data.Entity.dll</HintPath>
     </Reference>
+    <Reference Include="pdfduo-net, Version=2.4.0.0, Culture=neutral, PublicKeyToken=de6783bebe28bc03, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>DLL\pdfduo-net.dll</HintPath>
+    </Reference>
     <Reference Include="System.Web.DynamicData" />
     <Reference Include="System.Web.Entity" />
     <Reference Include="System.Web.ApplicationServices" />
@@ -131,6 +135,7 @@
     <Content Include="DLL\Microsoft.Practices.Unity.Interception.dll" />
     <Content Include="DLL\MySql.Data.dll" />
     <Content Include="DLL\MySql.Data.Entity.dll" />
+    <Content Include="DLL\pdfduo-net.dll" />
     <Content Include="ErrorPages\FileNotFound.html" />
     <Content Include="ErrorPages\GenericErrorPage.html" />
     <Content Include="ErrorPages\NoAccess.html" />

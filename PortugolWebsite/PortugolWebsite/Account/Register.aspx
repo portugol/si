@@ -18,11 +18,11 @@
 		
 		<div id="signUp"> <!-- signUp -->
 		 <div id="DivMessages">
-            <asp:Label ID="lblDuplicateEmail" Text="Cannot register. There's already an account with that email."  Visible="false" ForeColor="Red" EnableViewState="false" runat="server"></asp:Label>
-            <asp:Label ID="lblDuplicateUserName" Text="Cannot register. There's already an account with that username."  Visible="false" ForeColor="Red" EnableViewState="false" runat="server"></asp:Label>
-            <asp:Label ID="lblInvalidEmail" Text="Cannot register. Invalid E-mail format."  Visible="false" ForeColor="Red" EnableViewState="false" runat="server"></asp:Label>
-            <asp:Label ID="lblInvalidPassword" Text="Cannot register. Invalid password format. Password must be at least 6 characters and must have at least 1 non alphanumeric character" ForeColor="Red"  Visible="false" EnableViewState="false" runat="server"></asp:Label>
-            <asp:Label ID="lblProviderError" Text="Cannot register. <p>Application error.</p><p>Website administrators have been automatically notified of this problem.</p><p> Please try again later.</p>"  Visible="false" ForeColor="Red" EnableViewState="false" runat="server"></asp:Label>
+            <asp:Label ID="lblDuplicateEmail" Text="<%# Resources.ErrorMessages.duplicatedEmail %>"  Visible="false" ForeColor="Red" EnableViewState="false" runat="server"></asp:Label>
+            <asp:Label ID="lblDuplicateUserName" Text="<%# Resources.ErrorMessages.duplicatedUser %>"  Visible="false" ForeColor="Red" EnableViewState="false" runat="server"></asp:Label>
+            <asp:Label ID="lblInvalidEmail" Text="<%# Resources.ErrorMessages.invalidEmail %>"  Visible="false" ForeColor="Red" EnableViewState="false" runat="server"></asp:Label>
+            <asp:Label ID="lblInvalidPassword" Text="<%# Resources.ErrorMessages.invalidPasswordFormat %>" ForeColor="Red"  Visible="false" EnableViewState="false" runat="server"></asp:Label>
+            <asp:Label ID="lblProviderError" Text="<%# Resources.ErrorMessages.appError %>"  Visible="false" ForeColor="Red" EnableViewState="false" runat="server"></asp:Label>
             <%--<asp:Label ID="asdasd" Text='<%# Convert.ToString(Membership.Providers["CustomMembershipProvider"].MinRequiredPasswordLength) %>' runat="server"></asp:Label>--%>
         </div>
 			<div class="cleanForm">				

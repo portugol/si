@@ -144,6 +144,9 @@
   <data name="invalidPassword" xml:space="preserve">
     <value>Senha de identificação inválida</value>
   </data>
+  <data name="invalidPasswordFormat" xml:space="preserve">
+    <value>Registo não efetuado. Formato de senha d eidentificação inválido. A senha deve ter pelo menos 6 caracteres e deve ter pelo menos um caractere não alfanumérico</value>
+  </data>
   <data name="invalidRecord" xml:space="preserve">
     <value>Registo inválido</value>
   </data>

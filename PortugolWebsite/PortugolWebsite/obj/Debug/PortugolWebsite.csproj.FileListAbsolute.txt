@@ -26,3 +26,5 @@ D:\GitHubRepository\PortugolWebsite\PortugolWebsite\bin\Microsoft.Practices.Unit
 D:\GitHubRepository\PortugolWebsite\PortugolWebsite\bin\MySql.Data.Entity.dll
 D:\GitHubRepository\PortugolWebsite\PortugolWebsite\obj\Debug\PortugolWebsite.dll
 D:\GitHubRepository\PortugolWebsite\PortugolWebsite\obj\Debug\PortugolWebsite.pdb
+D:\GitHubRepository\PortugolWebsite\PortugolWebsite\bin\pdfduo-net.dll
+D:\GitHubRepository\PortugolWebsite\PortugolWebsite\obj\Debug\PortugolWebsite.csprojResolveAssemblyReference.cache
